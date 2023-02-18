@@ -29,10 +29,6 @@ body {
     width: fit-content;
 }
 
-.brand-logo {
-    height: 100px;
-}
-
 .order-now-button {
     background: black;
     color: white;
@@ -47,9 +43,9 @@ body {
 .order-now-button:hover,
 .order-now-button:active,
 .order-now-button:focus,
-.order-black:hover,
-.order-black:active,
-.order-black:focus {
+.btn-black:hover,
+.btn-black:active,
+.btn-black:focus {
     background: #222;
     color: white;
 }
@@ -63,7 +59,7 @@ body {
 }
 
 .bg-black {
-    background: black !important;
+    background: #000 !important;
 }
 
 .overlay {
@@ -72,7 +68,7 @@ body {
 	top: 0;
 	left: 0;
 	position: fixed;
-	background: white;
+	background: red;
 	z-index: -1;
 }
 
@@ -97,5 +93,16 @@ body {
 
     .header-container {
         padding-top: 164px;
+    }
+}
+
+/* pad the top a bit when navbar is collapsed on mobile */
+@media (max-width: 991px) {
+    .header-container {
+        padding-top: 116px;
+    }
+
+    body {
+        height: calc(100vh - 116px);
     }
 }
