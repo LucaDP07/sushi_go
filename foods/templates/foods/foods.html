@@ -14,12 +14,13 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col text-center mt-3">
+                <hr>
                 <h2 class="logo-font">Menu</h2>
                 <hr class="w-50 mb-1">
             </div>
         </div>
         <div class="row">
-            <div class="product-container col-10 offset-1">
+            <div class="food-container col-10 offset-1">
                 <div class="row mt-1 mb-2"></div>
                 <div class="row">
                     {% for food in foods %}
@@ -31,7 +32,7 @@
                                 </a>
                                 {% else %}
                                 <a href="{% url 'food_detail' food.id %}">
-                                    <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ food.name }}">
+                                    <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
                                 </a>
                                 {% endif %}
                                 <div class="card-body pb-0">
@@ -40,7 +41,7 @@
                                 <div class="card-footer bg-white pt-0 border-0 text-left">
                                     <div class="row">
                                         <div class="col">
-                                            <p class="lead mb-0 text-left font-weight-bold">${{ food.price }}</p>
+                                            <p class="lead mb-0 text-left font-weight-bold">€{{ food.price }}</p>
                                             {% if food.rating %}
                                                 <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ food.rating }} / 5</small>
                                             {% else %}
