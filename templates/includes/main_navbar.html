@@ -5,11 +5,11 @@
                 Menu
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <a href="" class="dropdown-item">Sushi Roll</a>
-                <a href="" class="dropdown-item ">Onigiri Rice Ball</a>
-                <a href="" class="dropdown-item ">Japanese Curry</a>
-                <a href="" class="dropdown-item">Noodles</a>
-                <a href="" class="dropdown-item">Side Dish</a>
+                <a href="{% url 'foods' %}?category=sushi_roll" class="dropdown-item">Sushi Roll</a>
+                <a href="{% url 'foods' %}?category=onigiri_rice_ball" class="dropdown-item ">Onigiri Rice Ball</a>
+                <a href="{% url 'foods' %}?category=japanese_curry" class="dropdown-item ">Japanese Curry</a>
+                <a href="{% url 'foods' %}?category=noodles" class="dropdown-item">Noodles</a>
+                <a href="{% url 'foods' %}?category=side_dish" class="dropdown-item">Side Dish</a>
                 <a href="{% url 'foods' %}" class="dropdown-item">All</a>
             </div>
         </li>
