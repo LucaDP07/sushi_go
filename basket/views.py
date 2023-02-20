@@ -12,7 +12,7 @@ def view_basket(request):
 def add_to_basket(request, item_id):
     """ Add a quantity of the specified product to the shopping bag """
 
-    food = Food.objects.get(pk=item_id)
+    food = get_object_or_404(Food, pk=item_id)
     quantity = int(request.POST.get('quantity'))
     redirect_url = request.POST.get('redirect_url')
     basket = request.session.get('basket', {})
@@ -57,7 +57,7 @@ def remove_from_basket(request, item_id):
         food = get_object_or_404(Food, pk=item_id)
         basket = request.session.get('basket', {})
 
-        bag.pop(item_id)
+        basket.pop(item_id)
         messages.success(request, f'Removed {food.name} from your basket')
 
         request.session['basket'] = basket
