@@ -33,6 +33,12 @@ body {
     width: fit-content;
 }
 
+.card-img-top {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+}
+
 .order-now-button {
     background: black;
     color: white;
