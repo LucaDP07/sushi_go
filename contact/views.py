@@ -4,7 +4,6 @@ from django.contrib import messages
 from django.conf import settings
 from .forms import ContactForm
 
-
 def contact(request, *args, **kwargs):
     """
     Displays Contact Us page form.
@@ -41,4 +40,4 @@ def contact(request, *args, **kwargs):
     else:
         form = ContactForm()
 
-    return render(request, 'contact.html', {'form': form})
+    return render(request, 'contact/contact.html', {'form': form})

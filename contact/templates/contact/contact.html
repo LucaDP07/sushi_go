@@ -6,11 +6,12 @@
 
 
 {% block extra_css %}
-<link rel="stylesheet" href="{% static 'css/company_pages.css' %}">
+<link rel="stylesheet" href="">
 {% endblock %}
 
 {% block content %}
 <!-- Main container for page content : Contact Us -->
+<div class="overlay"></div>
 <div class="container-fluid">
     <!-- Page header -->
     <div class="row">
@@ -25,8 +26,6 @@
                 Do you have a question, a concern, or a new idea for us?{% endblocktrans %}</p>
             <p class="card-text">If so, please complete the form below and we will aim to respond within 24
                 hours.</p>
-            <p class="card-text">Also visit our <a class="mailto-anchor" href="{% url 'faqs' %}"><strong>FAQs
-                        page</strong></a> to see whether your question has already been answered.</p>
         </div>
     </div>
     <div class="row">
@@ -42,7 +41,7 @@
                     </small>
                     <!-- Option to cancel if navigated to in error -->
                     <input class="back-btn" type="button" name="cancel" value="Cancel"
-                        onClick="window.location='https://the-coffee-collective.herokuapp.com/';return false;">
+                        onClick="window.location='https://8000-lucadp07-sushigo-0522vqkwip8.ws-eu88.gitpod.io/';return false;">
                     <!-- Button to submit contact form -->
                     <button class="btn standard-btn">Submit</button>
                 </form>
