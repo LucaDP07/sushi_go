@@ -3,25 +3,12 @@ from .models import Contact
 
 
 class ContactForm(forms.ModelForm):
-    """
-    Fields used for Contact Us
-    form from Contact Model
-    """
-    name = forms.CharField(
-        max_length=100, widget=forms.TextInput(attrs={'class': 'form-control'})
-    )
-    email = forms.EmailField(
-        max_length=150,
-        widget=forms.EmailInput(attrs={'class': 'form-control'})
-    )
-    subject = forms.CharField(
-        max_length=150, widget=forms.TextInput(attrs={'class': 'form-control'})
-    )
-    message = forms.CharField(
-        widget=forms.Textarea(
-                attrs={'class': 'form-control',
-                       'placeholder': 'Add your message here'}))
-
     class Meta:
         model = Contact
-        fields = ('name', 'email', 'subject', 'message')
+        fields = ('name', 'email', 'subject', 'message',)
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+
+        for field_name, field in self.fields.items():
+            field.widget.attrs['class'] = 'border-gold'

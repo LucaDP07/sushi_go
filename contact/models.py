@@ -1,19 +1,25 @@
+""" Contact Models """
+
 from django.db import models
-from django.utils import timezone
+from django.urls import reverse
 
 
 class Contact(models.Model):
-    """
-    Models the fields for the Contact Form.
-    """
-    name = models.CharField(max_length=155)
-    email = models.EmailField(max_length=155)
-    subject = models.CharField(max_length=200)
-    message = models.CharField(max_length=2000)
-    date_submitted = models.DateTimeField(default=timezone.now)
+    """ Model for Contact """
+
+    name = models.CharField(max_length=122, null=False, blank=False)
+    email = models.EmailField(max_length=254, null=False, blank=False)
+    subject = models.CharField(max_length=200, null=False, blank=False)
+    message = models.TextField(max_length=500, default='')
+    date = models.DateTimeField(auto_now_add=True)
+
+    def get_absolute_url(self):
+        """Get url after user submits enquiry """
+        return reverse('home')
 
     class Meta:
-        """ Set verbose name """
-        verbose_name = 'Contact Form'
-        verbose_name_plural = 'Contact Forms'
-        ordering = ['-date_submitted']
+        """ To display the equiries by date in ascending order """
+        ordering = ['-date']
+
+    def __str__(self):
+        return f"Enquiry: {self.subject} from {self.name}"

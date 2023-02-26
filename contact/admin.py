@@ -1,23 +1,19 @@
 
 
+"""imports for admin page"""
+
 from django.contrib import admin
-from .models import Contact
+from contact.models import Contact
 
 
-@admin.register(Contact)
 class ContactAdmin(admin.ModelAdmin):
-    """
-    Displays the fields and values
-    for Contact Model in Django admin.
-    """
+    """Allows admin to manage enquiries via the admin panel"""
     list_display = (
-        'name', 'email', 'subject',
-        'message', 'date_submitted'
-        )
-    search_fields = [
-        'name', 'subject', 'message',
-        'date_submitted'
-        ]
-    list_filter = (
-        'name', 'date_submitted'
-        )
+        'name',
+        'email',
+        'subject',
+        'date',
+    )
+
+
+admin.site.register(Contact, ContactAdmin)

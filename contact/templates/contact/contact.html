@@ -1,52 +1,36 @@
 {% extends "base.html" %}
 {% load static %}
-{% load crispy_forms_tags %}
-{% load i18n %}
-{% block title %}{% trans 'Contact Us' %}{% endblock %}
 
+{% block extra_title %}Sushi Go | Enquiry{% endblock %}
 
-{% block extra_css %}
-<link rel="stylesheet" href="">
+{% block page_header %}
+<div class="overlay"></div>
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
 {% endblock %}
 
 {% block content %}
-<!-- Main container for page content : Contact Us -->
-<div class="overlay"></div>
-<div class="container-fluid">
-    <!-- Page header -->
+{% load crispy_forms_tags %}
+
+<div class="container pb-5">
     <div class="row">
-        <div class="col mt-3 mb-3">
-            <h1 class="page-title">Contact Us</h1>
-            <hr class="mb-1">
+        <div class="col-12">
+            <h1 class="text-center pt-4">Make an Enquiry</h1>
         </div>
     </div>
-    <div class="row">
-        <div class="col mt-3 mb-3">
-            <p class="card-text">{% blocktrans %}
-                Do you have a question, a concern, or a new idea for us?{% endblocktrans %}</p>
-            <p class="card-text">If so, please complete the form below and we will aim to respond within 24
-                hours.</p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-8 mt-3 offset-md-2">
-            <div class="card-body">
-                <!-- Form for user to input details and reason for contacting business -->
-                <form class="mt-3 text-black" action="{% url 'contact' %}" method="POST" id="contact-form">
-                    {% csrf_token %}
-                    {{ form|crispy }}
-                    <small id="emailHelp" class="form-text text-muted mb-4">Rest assured we won't share your details
-                        with
-                        anyone else.
-                    </small>
-                    <!-- Option to cancel if navigated to in error -->
-                    <input class="back-btn" type="button" name="cancel" value="Cancel"
-                        onClick="window.location='https://8000-lucadp07-sushigo-0522vqkwip8.ws-eu88.gitpod.io/';return false;">
-                    <!-- Button to submit contact form -->
-                    <button class="btn standard-btn">Submit</button>
-                </form>
-            </div>
+    <br>
+    <div class="row justify-content-center ">
+        <div class="col-11 col-md-8 col-lg-6 mt-3">
+            <form method="post">
+                {{ contact_form | crispy }}
+                {% csrf_token %}
+                <button type="submit" class="btn btn-outline-dark border-gold rounded-0">Submit</button>
+                <a class="btn btn btn-outline-dark border-gold rounded-0 m-2" href="{%  url 'home' %}">Cancel</a>
+            </form>
         </div>
     </div>
 </div>
-{% endblock content %}
+{% endblock %}
