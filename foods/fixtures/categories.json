@@ -3,35 +3,56 @@
         "model": "foods.category",
         "pk": 1,
         "fields": {
-            "name": "sushi_roll", 
-            "friendly_name": "Sushi Roll"}
+            "name": "nigiri_sushi", 
+            "friendly_name": "Nigiri Sushi"}
     },
     {
         "model": "foods.category",
         "pk": 2,
         "fields": {
-            "name": "onigiri_rice_ball", 
-            "friendly_name": "Onigiri Rice Ball"}
+            "name": "osomaki", 
+            "friendly_name": "Osomaki"}
     },
     {
         "model": "foods.category",
         "pk": 3,
         "fields": {
-            "name": "japanese_curry", 
-            "friendly_name": "Japanese Curry"}
+            "name": "sashimi", 
+            "friendly_name": "Sashimi"}
     },
     {
         "model": "foods.category",
         "pk": 4,
+        "fields": {
+            "name": "temaki", 
+            "friendly_name": "Temaki"}
+    },
+    {
+        "model": "foods.category",
+        "pk": 5,
+        "fields": {
+            "name": "tempura", 
+            "friendly_name": "Tempura"}
+    },
+    {
+        "model": "foods.category",
+        "pk": 6,
+        "fields": {
+            "name": "okura_special_roll", 
+            "friendly_name": "Okura Special Roll"}
+    },
+    {
+        "model": "foods.category",
+        "pk": 7,
         "fields": {
             "name": "noodles", 
             "friendly_name": "Noodles"}
     },
     {
         "model": "foods.category",
-        "pk": 5,
+        "pk": 8,
         "fields": {
-            "name": "side_dish", 
-            "friendly_name": "Side Dish"}
+            "name": "side_dishes", 
+            "friendly_name": "Side Dishes"}
     }
 ]
