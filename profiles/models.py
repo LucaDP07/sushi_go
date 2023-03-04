@@ -1,8 +1,9 @@
 from django.db import models
 from django.contrib.auth.models import User
-from django_countries.fields import CountryField
 from django.db.models.signals import post_save
 from django.dispatch import receiver
+
+from django_countries.fields import CountryField
 
 
 class UserProfile(models.Model):
@@ -19,7 +20,8 @@ class UserProfile(models.Model):
     default_street_address2 = models.CharField(max_length=80, null=True, blank=True)
     default_county = models.CharField(max_length=80, null=True, blank=True)
 
-    from django_countries.fields import CountryField
+    def __str__(self):
+        return self.user.username
 
 
 @receiver(post_save, sender=User)
