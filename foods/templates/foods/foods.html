@@ -52,6 +52,17 @@
                                 </div>
                             </div>
                         </div>
+                        {% if request.user.is_authenticated %}
+                        <!-- Button to add item to Wish List -->
+                        <div class="row">
+                            <div class="col wish-list-btn-div">
+                                <a role="button" aria-disabled="true" href=""
+                                    class="btn wish-list-btn">Add to Wish List
+                                </a>
+                            </div>
+                        </div>
+                        {% endif %}
+
                         {% if forloop.counter|divisibleby:1 %}
                             <div class="col-12 d-sm-none mb-5">
                                 <hr>

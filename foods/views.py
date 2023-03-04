@@ -2,8 +2,8 @@ from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.db.models import Q
 from .models import Food, Category
+from django.contrib.auth import get_user_model
 
-# Create your views here.
 
 def all_foods(request):
     """ A view to show all foods, including sorting and search queries """
