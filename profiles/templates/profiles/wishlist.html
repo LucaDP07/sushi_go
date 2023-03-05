@@ -1,0 +1,112 @@
+{% extends "base.html" %}
+{% load static %}
+{% load i18n %}
+{% block title %}{% trans 'Wish List' %}{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/profiles.css' %}">
+{% endblock %}
+
+{% block content %}
+<!-- User will be logged in to access this page -->
+{% if user.is_authenticated %}
+<!-- Main container for page content -->
+<div class="container-fluid">
+    <!-- Page header -->
+    <div class="row">
+        <div class="col text-center mt-3 mb-3">
+            <h1 class="page-title">Wish List</h1>
+            <hr class="w-50 mb-1">
+        </div>
+    </div>
+    <!-- Wish list container -->
+    {% if wishlist %}
+    <!-- Container for foods -->
+    <div class="row">
+        <!-- Grid layout for foods -->
+        <div class="food-container col-10 mx-auto">
+            <div class="row mt-1 mb-2">
+                <!-- Bootstrap card combined with for loop to show all foods -->
+                {% for food in wishlist %}
+                <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-4 xl-screen-foods-grid">
+                    <div class="card h-100 border-0">
+                        <!-- Food image (if available) -->
+                        <div class="food-img-container text-center">
+                            {% if food.image %}
+                            <a href="{% url 'food_detail' food.id %}">
+                                <img class="card-img-top img-fluid mx-auto d-block" src="{{ food.image.url }}"
+                                    alt="An image of the {{ food.name }} food">
+                            </a>
+                            {% else %}
+                            <a href="{% url 'food_detail' food.id %}">
+                                <img class="card-img-top img-fluid mx-auto d-block" src="{{ MEDIA_URL }}noimage.png"
+                                    alt="An image of this food is not available">
+                            </a>
+                            {% endif %}
+                        </div>
+                        <!-- Food details -->
+                        <div class="card-body pb-0">
+                            <h2 class="card-title title-font mb-0">{{ food.name }}</h2>
+                        </div>
+                        <div class="card-footer pt-0">
+                            <div class="row">
+                                <div class="col mb-3 food-price">
+                                    <p class="lead mb-0">€{{ food.price }}</p>
+                                </div>
+                                <div class="col mb-3 food-rating">
+                                    {% if food.rating %}
+                                    <small class="lead rating-icon"><i class="fa-sharp fa-solid fa-mug-saucer"></i>
+                                        {{ food.rating }} / 5</small>
+                                    {% else %}
+                                    <small class="text-muted">No Rating</small>
+                                    {% endif %}
+                                </div>
+                            </div>
+                            <!-- Button to View Details -->
+                            <div class="row">
+                                <div class="col view-details-btn-div">
+                                    <a href="{% url 'food_detail' food.id %}" role="button" aria-disabled="true" class="btn view-details-btn">View Details</a>
+                                </div>
+                            </div>
+                            <!-- Button to remove item from Wish List -->
+                            <div class="row">
+                                <div class="col wish-list-btn-div">
+                                    <a href="{% url 'user_wishlist' food.id %}" role="button" aria-disabled="true" class="btn wish-list-btn">Remove From Wish
+                                        List</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    {% else %}
+    <div class="col-12 mb-4 text-center">
+        <h3 class="page-h3-title col-12 mb-4" style="padding-left: 0;">There are currently no items in your Wish
+            List.</h3>
+        <!-- Back to foods page -->
+        <a href="{% url 'foods' %}" class="btn back-btn">Keep<br>Shopping</a>
+    </div>
+    {% endif %}
+    {% else %}
+    <!-- Information to user if navigated to in error without being signed in -->
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="card-block">
+                <p class="card-text">
+                    Sorry you must be signed in to access this page, please use the button below to
+                    return to our homepage
+                </p>
+                <a href="{% url 'home' %}" type="button" class="anchor-tag-btn">Home
+                </a>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+    {% endblock %}
+
+    {% block postloadjs %}
+    {{ block.super }}
+    {% endblock %}

@@ -1,3 +1,5 @@
+/* Order History Section */
+
 .order-history {
     max-height: 416px; /* height of profile form + submit button */
     overflow-y: auto;
@@ -19,3 +21,43 @@
 #id_default_country option:first-child {
     color: #aab7c4;
 }
+
+/* Wish List Page */
+
+.food-img-container {
+    min-height: 23rem;
+    padding: 0rem 0.125rem;
+}
+
+.card-img-top {
+    width: auto;
+}
+
+.view-details-btn {
+    width: inherit;
+    border-radius: 0;
+    text-align: center;
+    background-color: rgba(100, 105, 109, 0.19);
+    color: #383838;
+}
+
+.view-details-btn:hover {
+    background-color: #674ea7;
+    color: #fff;
+}
+
+.wish-list-btn-div {
+    margin-top: 0.45rem;
+}
+
+.wish-list-btn {
+    width: inherit;
+    border-radius: 0;
+    text-align: center;
+    background-color: #674ea7;
+    color: #fff;
+}
+
+.wish-list-btn:hover {
+    background-color:rgba(100, 105, 109, 0.19);
+    color: #383838;
