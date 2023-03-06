@@ -55,8 +55,7 @@ def wishlist(request):
     if request.user.is_authenticated:
         # print(request.user.id)
         foods = Food.objects.filter(users_wishlist=request.user)
-        # foods = Food.objects.all()
-        
+      
         return render(request, 'profiles/wishlist.html',
                       {'wishlist': foods})
     else:
@@ -68,14 +67,14 @@ def wishlist(request):
 # Very Academy code from YouTube tutorial
 @login_required
 def add_to_wishlist(request, id):
-    food = get_object_or_404(Product, id=id)
-    if product.users_wishlist.filter(id=request.user.id).exists():
-        product.users_wishlist.remove(request.user)
-        messages.success(request, product.name + ' has been \
+    food = get_object_or_404(Food, id=id)
+    if food.users_wishlist.filter(id=request.user.id).exists():
+        food.users_wishlist.remove(request.user)
+        messages.success(request, food.name + ' has been \
                          removed from your Wish List')
     else:
-        product.users_wishlist.add(request.user)
-        messages.success(request, 'Added ' + product.name + ' to \
+        food.users_wishlist.add(request.user)
+        messages.success(request, 'Added ' + food.name + ' to \
                          your Wish List')
     return HttpResponseRedirect(request.META["HTTP_REFERER"])
 

@@ -1,0 +1,17 @@
+[
+{
+  "model": "foods.food",
+  "pk": 1,
+  "fields": {
+    "category": 1,
+    "sku": "123",
+    "name": "Test",
+    "description": "Test 1",
+    "price": "11.00",
+    "rating": "1.00",
+    "image_url": null,
+    "image": "chick-g98cbf37c6_1920.jpg",
+    "users_wishlist": []
+  }
+}
+]

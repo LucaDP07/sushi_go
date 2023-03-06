@@ -1,8 +1,8 @@
+from django.contrib.auth.models import User
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.db.models import Q
 from .models import Food, Category
-from django.contrib.auth import get_user_model
 
 
 def all_foods(request):

@@ -16,7 +16,7 @@ def checkout(request):
 
     basket = request.session.get('basket', {})
     if not basket:
-        messages.error(request, "There's nothing in your bag at the moment")
+        messages.error(request, "There's nothing in your basket at the moment")
         return redirect(reverse('foods'))
 
     current_basket = basket_contents(request)
