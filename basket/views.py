@@ -44,7 +44,7 @@ def adjust_basket(request, item_id):
         messages.success(
             request, f'Updated {food.name} quantity to {basket[item_id]}')
     else:
-        bag.pop(item_id)
+        basket.pop(item_id)
         messages.success(request, f'Removed {food.name} from your basket')
 
     request.session['basket'] = basket
