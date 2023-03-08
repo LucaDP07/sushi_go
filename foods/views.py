@@ -3,6 +3,7 @@ from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.db.models import Q
 from .models import Food, Category
+from .forms import FoodForm
 
 
 def all_foods(request):
@@ -46,3 +47,14 @@ def food_detail(request, food_id):
     }
 
     return render(request, 'foods/food_detail.html', context)
+
+
+def add_food(request):
+    """ Add food to the menu """
+    form = FoodForm()
+    template = 'foods/add_food.html'
+    context = {
+        'form': form,
+    }
+
+    return render(request, template, context)
