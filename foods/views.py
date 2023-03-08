@@ -51,7 +51,17 @@ def food_detail(request, food_id):
 
 def add_food(request):
     """ Add food to the menu """
-    form = FoodForm()
+    if request.method == 'POST':
+        form = FoodForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Menu successfully updated!')
+            return redirect(reverse('add_food'))
+        else:
+            messages.error(request, 'Failed to update menu. Please ensure the form is valid.')
+    else:
+        form = FoodForm()
+        
     template = 'foods/add_food.html'
     context = {
         'form': form,
