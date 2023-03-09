@@ -68,3 +68,27 @@ def add_food(request):
     }
 
     return render(request, template, context)
+
+
+def edit_food(request, food_id):
+    """ Edit food in the store """
+    food = get_object_or_404(Food, pk=food_id)
+    if request.method == 'POST':
+        form = FoodForm(request.POST, request.FILES, instance=product)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Update Successful!')
+            return redirect(reverse('food_detail', args=[food.id]))
+        else:
+            messages.error(request, 'Updated Failed. Please ensure the form is valid.')
+    else:
+        form = FoodForm(instance=product)
+        messages.info(request, f'You are editing {food.name}')
+
+    template = 'foods/edit_food.html'
+    context = {
+        'form': form,
+        'food': food,
+    }
+
+    return render(request, template, context)
