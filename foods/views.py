@@ -85,7 +85,7 @@ def edit_food(request, food_id):
 
     food = get_object_or_404(Food, pk=food_id)
     if request.method == 'POST':
-        form = FoodForm(request.POST, request.FILES, instance=product)
+        form = FoodForm(request.POST, request.FILES, instance=food)
         if form.is_valid():
             form.save()
             messages.success(request, 'Update Successful!')
@@ -93,7 +93,7 @@ def edit_food(request, food_id):
         else:
             messages.error(request, 'Updated Failed. Please ensure the form is valid.')
     else:
-        form = FoodForm(instance=product)
+        form = FoodForm(instance=food)
         messages.info(request, f'You are editing {food.name}')
 
     template = 'foods/edit_food.html'
