@@ -54,9 +54,9 @@ def add_food(request):
     if request.method == 'POST':
         form = FoodForm(request.POST, request.FILES)
         if form.is_valid():
-            form.save()
+            food = form.save()
             messages.success(request, 'Menu successfully updated!')
-            return redirect(reverse('add_food'))
+            return redirect(reverse('food_detail', args=[food.id]))
         else:
             messages.error(request, 'Failed to update menu. Please ensure the form is valid.')
     else:
@@ -92,3 +92,11 @@ def edit_food(request, food_id):
     }
 
     return render(request, template, context)
+
+
+def delete_food(request, food_id):
+    """ Delete food from the store """
+    food = get_object_or_404(Food, pk=food_id)
+    food.delete()
+    messages.success(request, 'Food deleted!')
+    return redirect(reverse('foods'))
