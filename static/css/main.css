@@ -320,6 +320,30 @@ a.category-badge > span.badge:hover {
 	color: #17a2b8; /* text-info */
 }
 
+/* Testimonials */
+
+.testimonial-bg {
+    background-color: #F6f6f6;
+}
+
+.card-columns {
+    column-gap: 2rem;
+}
+
+.card-columns {
+    column-count: 2;
+}
+
+.quote {
+    left: 50%;
+    position: absolute;
+    top: -20px;
+    margin-left: -16px;
+    border-radius: 50%;
+    padding: 10px;
+    color: #A99166 !important;
+}
+
 /* Product Form */
 
 .btn-file {
