@@ -1,5 +1,6 @@
 from django.contrib.auth.models import User
 from django.shortcuts import render, redirect, reverse, get_object_or_404
+from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 from django.db.models import Q
 from .models import Food, Category
@@ -24,7 +25,7 @@ def all_foods(request):
             if not query:
                 messages.error(request, "Please enter your search criteria!")
                 return redirect(reverse('foods'))
-            
+
             queries = Q(name__icontains=query) | Q(description__icontains=query)
             foods = foods.filter(queries)
 
@@ -49,8 +50,13 @@ def food_detail(request, food_id):
     return render(request, 'foods/food_detail.html', context)
 
 
+@login_required
 def add_food(request):
     """ Add food to the menu """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
+
     if request.method == 'POST':
         form = FoodForm(request.POST, request.FILES)
         if form.is_valid():
@@ -61,7 +67,7 @@ def add_food(request):
             messages.error(request, 'Failed to update menu. Please ensure the form is valid.')
     else:
         form = FoodForm()
-        
+
     template = 'foods/add_food.html'
     context = {
         'form': form,
@@ -70,8 +76,13 @@ def add_food(request):
     return render(request, template, context)
 
 
+@login_required
 def edit_food(request, food_id):
     """ Edit food in the store """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
+
     food = get_object_or_404(Food, pk=food_id)
     if request.method == 'POST':
         form = FoodForm(request.POST, request.FILES, instance=product)
@@ -94,8 +105,13 @@ def edit_food(request, food_id):
     return render(request, template, context)
 
 
+@login_required
 def delete_food(request, food_id):
     """ Delete food from the store """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
+
     food = get_object_or_404(Food, pk=food_id)
     food.delete()
     messages.success(request, 'Food deleted!')
