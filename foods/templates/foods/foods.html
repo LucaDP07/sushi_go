@@ -55,20 +55,26 @@
                                             {% endif %}
                                         </div>
                                     </div>
+                                    <!-- Button to View Details -->
+                                    <br>
+                                    <div class="row">
+                                        <div class="col view-details-btn-div">
+                                            <a role="button" aria-disabled="true" href="{% url 'food_detail' food.id %}" class="btn view-details-btn">View Details</a>
+                                        </div>
+                                    </div>
+                                    {% if request.user.is_authenticated %}
+                                    <!-- Button to add item to Wish List -->
+                                    <div class="row">
+                                        <div class="col wish-list-btn-div">
+                                            <a role="button" aria-disabled="true" href="{% url 'user_wishlist' food.id %}"
+                                                class="btn wish-list-btn">Add to Wish List
+                                            </a>
+                                        </div>
+                                    </div>
+                                    {% endif %}
                                 </div>
                             </div>
                         </div>
-                        {% if request.user.is_authenticated %}
-                        <!-- Button to add item to Wish List -->
-                        <div class="row">
-                            <div class="col wish-list-btn-div">
-                                <a role="button" aria-disabled="true" href="{% url 'user_wishlist' food.id %}"
-                                    class="btn wish-list-btn">Add to Wish
-                                    List</a>
-                            </div>
-                        </div>
-                        {% endif %}
-
                         {% if forloop.counter|divisibleby:1 %}
                             <div class="col-12 d-sm-none mb-5">
                                 <hr>

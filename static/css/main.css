@@ -16,7 +16,7 @@ body {
     flex-direction: column;
 }
 
-/* from Bulma */
+/* from Bulma to support Font Awesome icons */
 .icon {
     align-items: center;
     display: inline-flex;
@@ -25,7 +25,7 @@ body {
     width: 1.5rem;
 }
 
-
+/* home page */
 .brand-logo {
     width: 60px;
 }
@@ -173,6 +173,21 @@ a.category-badge > span.badge:hover {
 .update-link,
 .remove-item {
     cursor: pointer;
+}
+
+/* Wish List Page */
+
+.view-details-btn {
+    width: inherit;
+    border-radius: 0;
+    text-align: center;
+    background-color: rgba(100, 105, 109, 0.19);
+    color: #383838;
+}
+
+.view-details-btn:hover {
+    background-color: #674ea7;
+    color: #fff;
 }
 
 .wish-list-btn-div {
