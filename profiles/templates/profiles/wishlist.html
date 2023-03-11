@@ -1,6 +1,10 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'profiles/css/profile.css' %}">
+{% endblock %}
+
 {% block page_header %}
     <div class="container header-container">
         <div class="row">
@@ -10,9 +14,9 @@
 {% endblock %}
 
 {% block content %}
-<!-- User will be logged in to access this page -->
-{% if user.is_authenticated %}
-<!-- Main container for page content -->
+    <!-- User will be logged in to access this page -->
+    {% if user.is_authenticated %}
+    <!-- Main container for page content -->
     <div class="overlay"></div>
     <div class="container-fluid">
         <!-- Page header -->
@@ -25,9 +29,9 @@
         </div>
         <!-- Wish list container -->
         {% if wishlist %}
-        <!-- Container for products -->
+        <!-- Container for foods -->
         <div class="row">
-            <!-- Grid layout for products -->
+            <!-- Grid layout for foods -->
             <div class="food-container col-10 offset-1">
                 <div class="row mt-1 mb-2"></div>
                 <div class="row">
@@ -35,7 +39,7 @@
                     {% for food in wishlist %}
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                             <div class="card h-100 border-0">
-                                <!-- Product image (if available) -->
+                                <!-- Food image (if available) -->
                                 {% if food.image %}
                                 <a href="{% url 'food_detail' food.id %}">
                                     <img class="card-img-top img-fluid mx-auto d-block" src="{{ food.image.url }}"
@@ -47,7 +51,7 @@
                                     alt="An image of this food is not available">
                                 </a>
                                 {% endif %}
-                                <!-- Product details -->
+                                <!-- Food details -->
                                 <div class="card-body pb-0">
                                     <p class="mb-0">{{ food.name }}</p>
                                 </div>
@@ -69,7 +73,7 @@
                                             <a href="{% url 'food_detail' food.id %}" role="button" aria-disabled="true" class="btn view-details-btn">View Details</a>
                                         </div>
                                     </div>
-                                    <!-- Button to remove item from Wish List -->
+                                    <!-- Button to remove food from Wish List -->
                                     <div class="row">
                                         <div class="col wish-list-btn-div">
                                             <a href="{% url 'user_wishlist' food.id %}" role="button" aria-disabled="true" class="btn wish-list-btn">Remove From Wish List</a>
@@ -106,7 +110,7 @@
         <div class="col-12 mb-4 text-center">
             <h3 class="page-h3-title col-12 mb-4" style="padding-left: 0;">There are currently no items in your Wish
                 List.</h3>
-            <!-- Back to products page -->
+            <!-- Back to menu page -->
             <a href="{% url 'foods' %}" class="btn back-btn">Keep<br>Shopping</a>
         </div>
         {% endif %}
