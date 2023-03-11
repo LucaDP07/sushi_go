@@ -260,6 +260,17 @@ a.category-badge > span.badge:hover {
     overflow-y: auto;
 }
 
+
+/* -------------------------Subscribe form */
+
+#mc_embed_signup .button .foot {
+    /* border: 1px solid #ABB0B2; */
+    border-radius: 3px;
+    border-radius: 3px;
+    border-radius: 33px;
+    padding: 40px;
+}
+
 /* --------------- footer */
 footer {
     margin-top: auto;
@@ -283,11 +294,7 @@ footer {
     --bs-gutter-x: 0px;
 }
 
-.footer-menu a,
-.nav-item a,
-.nav-item li a,
-.shopping-cart,
-.dropdown-item {
+.footer-menu a {
     color: black;
     text-transform: uppercase;
 }
@@ -315,40 +322,20 @@ footer {
     border-radius: 3px;
     border-radius: 3px;
     border-radius: 33px !important;
-}
-
-.social-links {
-    padding: 12px 0px;
-}
-
-.home-icon:hover,
-.mobile-menu:hover,
-.nav-item a:hover,
-.shopping-cart:hover {
-    color: #F99F38;
-    transition: ease-in-out all .3s;
-}
-
-.shopping-cart-total {
-    font-weight: 500;
-    font-family: 'Poppins';
-}
-
-.nav-item li a:hover {
-    color: #F99F38;
-    background-color: white;
-}
-
-.social-media-icon i {
-    font-size: 2.5rem;
-    color: black;
-    margin-right: 1.5rem;
+    margin-left: 1.5rem;
 }
 
 .social-media-icon i {
     font-size: 1.25rem;
+    color: black;
+    margin-right: 1.5rem;
 }
 
+.social-links {
+    padding: 30px 0px;
+    margin-bottom: 2rem;
+
+}
 
 /* -------------------------------- Media Queries */
 
@@ -479,6 +466,7 @@ footer {
     .header-container {
         padding-top: 164px;
     }
+
 }
 
 /* pad the top a bit when navbar is collapsed on mobile */
