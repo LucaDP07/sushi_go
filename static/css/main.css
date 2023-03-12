@@ -46,13 +46,13 @@ body {
 }
 
 .order-now-button {
-    background: black;
+    background: #FFA92C;
     color: white;
     min-width: 260px;
 }
 
 .btn-black {
-    background: black;
+    background: #FFA92C;
     color: white;
 }
 
@@ -175,6 +175,7 @@ a.category-badge > span.badge:hover {
 .remove-item {
     cursor: pointer;
 }
+
 
 
 /* Wish List Page */

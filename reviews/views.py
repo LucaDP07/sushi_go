@@ -26,7 +26,7 @@ class AddTestimonial(
     """This view is used to allow a user to add a testimonial"""
     form_class = TestimonialForm
     template_name = 'reviews/add_review.html'
-    success_message = "Your testimonial was added successfully"
+    success_message = "Your review was added successfully"
 
     def form_valid(self, form):
         """
