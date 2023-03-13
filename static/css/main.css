@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
+/* Site wide styles */
 html {
     height: 100%;
 }
@@ -15,6 +16,16 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+}
+
+.overlay {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background: white;
+	z-index: -1;
 }
 
 /* from Bulma to support Font Awesome icons */
@@ -44,6 +55,8 @@ body {
     height: auto;
     aspect-ratio: 16/9;
 }
+
+/* Generic button styles  */
 
 .order-now-button {
     background: #FFA92C;
@@ -122,6 +135,27 @@ button {
     border: 1px solid #A99166 !important;
 }
 
+a.category-badge > span.badge:hover {
+    background: #212529 !important;
+    color: #fff !important;
+}
+
+.btt-button {
+    height: 42px;
+    width: 42px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.btt-link,
+.update-link,
+.remove-item {
+    cursor: pointer;
+}
+
+/* Generic form styles  */
+
 .form-control:focus {
     border-color: #ced4da;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 0.5rem rgba(103, 78, 167, 0.5);
@@ -147,38 +181,7 @@ input[name='q']::placeholder P {
     background: #FFA92C !important;
 }
 
-.overlay {
-	height: 100%;
-	width: 100%;
-	top: 0;
-	left: 0;
-	position: fixed;
-	background: white;
-	z-index: -1;
-}
-
-a.category-badge > span.badge:hover {
-    background: #212529 !important;
-    color: #fff !important;
-}
-
-.btt-button {
-    height: 42px;
-    width: 42px;
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-}
-
-.btt-link,
-.update-link,
-.remove-item {
-    cursor: pointer;
-}
-
-
-
-/* Wish List Page */
+/* Wish List Buttons */
 
 .view-details-btn {
     width: inherit;
@@ -210,7 +213,7 @@ a.category-badge > span.badge:hover {
     color: #383838;
 }
 
-/* ------------------------------- bootstrap toasts */
+/* bootstrap toasts */
 
 .message-container {
     position: fixed;
@@ -279,7 +282,7 @@ a.category-badge > span.badge:hover {
 }
 
 
-/* -------------------------Subscribe form */
+/* Subscribe form */
 
 #mc_embed_signup .button .foot {
     /* border: 1px solid #ABB0B2; */
@@ -319,15 +322,14 @@ footer {
 
 #mc-embedded-subscribe {
     background-color: white !important;
-    color: #F99F38 !important;
-    border-color: #F99F38 !important;
-    border-radius: 33px !important;
+    color: #FFA92C !important;
+    border-color: #FFA92C !important;
     height: 40px !important;
-    border: .6px solid #F99F38 !important;
+    border: .6px solid #FFA92C !important;
 }
 
 #mc-embedded-subscribe:hover {
-    background-color: #F99F38 !important;
+    background-color: #FFA92C !important;
     color: white !important;
 }
 
@@ -337,9 +339,6 @@ footer {
 
 #mc_embed_signup input {
     border: 0.6px solid #ABB0B2 !important;
-    border-radius: 3px;
-    border-radius: 3px;
-    border-radius: 33px !important;
     margin-left: 1.5rem;
 }
 
@@ -355,13 +354,13 @@ footer {
 
 }
 
-/* -------------------------------- Media Queries */
+/* Media Queries */
 
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
-  .container {
-    max-width: 80%;
-  }
+    .container {
+      max-width: 80%;
+    }
 }
 
 /* Allauth form formatting */
@@ -442,7 +441,7 @@ footer {
     color: #FFA92C !important;
 }
 
-/* Product Form */
+/* Food Form */
 
 .btn-file {
     position: relative;
@@ -470,7 +469,6 @@ footer {
     border-radius: 0;
 }
 
-
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
     .fixed-top-desktop-only {
@@ -484,7 +482,6 @@ footer {
     .header-container {
         padding-top: 164px;
     }
-
 }
 
 /* pad the top a bit when navbar is collapsed on mobile */
