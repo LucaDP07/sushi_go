@@ -202,7 +202,7 @@ input[name='q']::placeholder P {
 
 .wish-list-btn {
     width: inherit;
-    border-radius: 0;
+    border-radius: 33px;
     text-align: center;
     background-color: #FFA92C;
     color: #fff;
