@@ -45,8 +45,8 @@
                                     {% include "basket/food-info.html" %}
                                 </div>
                                 <div class="col-12 col-sm-6 order-sm-last">
-                                    <p class="my-0">Price Each: ${{ item.food.price }}</p>
-                                    <p><strong>Subtotal: </strong>${{ item.food.price | calc_subtotal:item.quantity }}</p>
+                                    <p class="my-0">Price Each: €{{ item.food.price }}</p>
+                                    <p><strong>Subtotal: </strong>€{{ item.food.price | calc_subtotal:item.quantity }}</p>
                                 </div>
                                 <div class="col-12 col-sm-6">
                                     {% include "basket/quantity-form.html" %}
@@ -81,13 +81,13 @@
                                         {% include "basket/food-info.html" %}
                                     </td>
                                     <td class="py-3">
-                                        <p class="my-0">${{ item.food.price }}</p>
+                                        <p class="my-0">€{{ item.food.price }}</p>
                                     </td>
                                     <td class="py-3 w-25">
                                         {% include "basket/quantity-form.html" %}
                                     </td>
                                     <td class="py-3">
-                                        <p class="my-0">${{ item.food.price | calc_subtotal:item.quantity }}</p>
+                                        <p class="my-0">€{{ item.food.price | calc_subtotal:item.quantity }}</p>
                                     </td>
                                 </tr>
                             {% endfor %}
@@ -109,7 +109,7 @@
                         <span class="icon">
                             <i class="fas fa-chevron-left"></i>
                         </span>
-                        <span class="text-uppercase">Keep Shopping</span>
+                        <span class="text-uppercase">Back to Menu</span>
                     </a>
                 {% endif %}
             </div>
