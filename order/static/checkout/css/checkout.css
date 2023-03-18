@@ -66,3 +66,12 @@ select:invalid,
 select option[value=""] {
     color: #aab7c4 !important;
 }
+
+.text-success {
+    color: #28a745 !important;
+  }
+  
+  a.text-success:hover, a.text-success:focus {
+    color: #19692c !important;
+  }
+  
