@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'reviews',
     'order',
     'profiles',
+    'markets',
 
     # Other
     'crispy_forms',
