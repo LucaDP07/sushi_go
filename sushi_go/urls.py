@@ -14,6 +14,7 @@ urlpatterns = [
     path('reviews/', include('reviews.urls')),
     path('order/', include('order.urls')),
     path('profile/', include('profiles.urls')),
+    path('markets/', include('markets.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 handler404 = 'sushi_go.views.handler404'
