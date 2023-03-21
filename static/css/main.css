@@ -315,6 +315,7 @@ footer {
     --bs-gutter-x: 0px;
 }
 
+
 .footer-menu a {
     color: black;
     text-transform: uppercase;
@@ -339,18 +340,6 @@ footer {
 
 #mc_embed_signup input {
     border: 0.6px solid #ABB0B2 !important;
-}
-
-.social-media-icon i {
-    font-size: 1.25rem;
-    color: black;
-    margin-right: 1.5rem;
-}
-
-.social-links {
-    padding: 55px 0px;
-    margin-bottom: 2rem;
-
 }
 
 /* Media Queries */
@@ -529,23 +518,4 @@ footer {
     .increment-qty, .decrement-qty {
         padding: .25rem .5rem !important;
     }
-}
-
-/* for small screens up to 768px */
-
-@media (max-width:768px) {
-    .social-links {
-        padding: 55px 0px;
-        margin-bottom: 1rem;
-    }
-}
-
-/* for small screens up to 375px */
-
-@media screen and (max-width:375px) {
-    .social-links {
-        padding: 5px 0px;
-        margin-bottom: 1rem;
-    }
-    
 }
