@@ -1,23 +1,26 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block extra_title %}Sushi Go | Edit Testimonial{% endblock %}
+{% block extra_title %}Sushi Go | Edit Review{% endblock %}
 
 {% block page_header %}
+<!-- BLOCK PAGE HEADER -->
 <div class="container header-container">
     <div class="row">
         <div class="col"></div>
     </div>
 </div>
+<!-- END OF BLOCK PAGE HEADER -->
 {% endblock %}
 
 {% block content %}
 {% load crispy_forms_tags %}
+<!-- EDIT REVIEW FORM -->
 <div class="overlay"></div>
 <div class="container">
     <div class="row">
         <div class="col-12">
-            <h1 class="text-center pt-4">Edit Testimonial</h1>
+            <h1 class="text-center pt-4">Edit Review</h1>
         </div>
     </div>
     <br>
@@ -27,7 +30,7 @@
             <form method="post" enctype="multipart/form-data">
                 {{ form | crispy }}
                 {% csrf_token %}
-                <button type="submit" class="btn btn-outline-dark border-gold rounded-0">Edit Testimonial</button>
+                <button type="submit" class="btn btn-outline-dark border-gold rounded-0">Edit Review</button>
                 <a class="btn btn btn-outline-dark border-gold rounded-0 m-2"
                     href="{%  url 'testimonials' %}">Cancel</a>
             </form>

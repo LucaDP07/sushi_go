@@ -2,14 +2,17 @@
 {% load static %}
 
 {% block page_header %}
+    <!-- BLOCK PAGE HEADER -->
     <div class="container header-container">
         <div class="row">
             <div class="col"></div>
         </div>
     </div>
+    <!-- END OF BLOCK PAGE HEADER -->
 {% endblock %}
 
 {% block content %}
+    <!-- MENU SECTION -->
     <div class="overlay"></div>
     <div class="container-fluid">
         <div class="row">
@@ -55,7 +58,7 @@
                                             {% endif %}
                                         </div>
                                     </div>
-                                    <!-- Button to View Details -->
+                                    <!-- BUTTON TO VIEW DETAILS -->
                                     <br>
                                     <div class="row">
                                         <div class="col view-details-btn-div">
@@ -63,7 +66,7 @@
                                         </div>
                                     </div>
                                     {% if request.user.is_authenticated %}
-                                    <!-- Button to add item to Wish List -->
+                                    <!-- BUTTON TO ADD FOOD TO WISH LIST -->
                                     <div class="row">
                                         <div class="col wish-list-btn-div">
                                             <a role="button" aria-disabled="true" href="{% url 'user_wishlist' food.id %}"

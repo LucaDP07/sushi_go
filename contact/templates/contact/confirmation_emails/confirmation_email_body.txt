@@ -1,9 +1,11 @@
 Hello {{ cust_name }}!
 
-We have received the below enquiry:
+We have received the following contact request:
 
 {{ message }}
 
 We will get back to you as soon as we can
 
 Sincerely,
+
+Sushi Go

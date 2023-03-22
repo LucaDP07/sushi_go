@@ -4,15 +4,18 @@
 {% block extra_title %}Sushi Go | Delete Review{% endblock %}
 
 {% block page_header %}
+<!-- BLOCK PAGE HEADER -->
 <div class="container header-container">
     <div class="row">
         <div class="col"></div>
     </div>
 </div>
+<!-- END OF BLOCK PAGE HEADER -->
 {% endblock %}
 
 {% block content %}
 {% load crispy_forms_tags %}
+<!-- DELETE REVIEW FORM -->
 <div class="overlay"></div>
 <div class="container">
     <div class="row">
@@ -21,7 +24,7 @@
         </div>
     </div>
     <br>
-    <p class="text-center mt-3">Are you sure you want to delete this Testimonial?</p>
+    <p class="text-center mt-3">Are you sure you want to delete this review?</p>
     <div class="row justify-content-center">
         <div class="col-11 col-md-6 col-lg-4 mt-3">
             <form class="text-center" method="POST">

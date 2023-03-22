@@ -2,15 +2,18 @@
 {% load static %}
 
 {% block extra_css %}
+     <!-- PROFILE CSS -->
     <link rel="stylesheet" href="{% static 'profiles/css/profile.css' %}">
 {% endblock %}
 
 {% block page_header %}
+    <!-- BLOCK PAGE HEADER -->
     <div class="container header-container">
         <div class="row">
             <div class="col"></div>
         </div>
     </div>
+    <!-- END OF BLOCK PAGE HEADER -->
 {% endblock %}
 
 {% block content %}
@@ -19,7 +22,7 @@
     <!-- Main container for page content -->
     <div class="overlay"></div>
     <div class="container-fluid">
-        <!-- Page header -->
+        <!-- PAGE HEADER -->
         <div class="row">
             <div class="col text-center mt-3">
                 <hr>
@@ -27,15 +30,15 @@
                 <hr class="w-50 mb-1">
             </div>
         </div>
-        <!-- Wish list container -->
+        <!-- WISH LIST CONTAINER-->
         {% if wishlist %}
-        <!-- Container for foods -->
+        <!-- CONTAINER FOR FOODS -->
         <div class="row">
-            <!-- Grid layout for foods -->
+            <!-- GRID LAYOUT FOR FOODS -->
             <div class="food-container col-10 offset-1">
                 <div class="row mt-1 mb-2"></div>
                 <div class="row">
-                    <!-- Bootstrap card combined with for loop to show all foods -->
+                    <!-- BOOTSTRAP CARD COMBINED WITH FOR LOOP TO SHOW ALL FOODS -->
                     {% for food in wishlist %}
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                             <div class="card h-100 border-0">
@@ -51,7 +54,7 @@
                                     alt="An image of this food is not available">
                                 </a>
                                 {% endif %}
-                                <!-- Food details -->
+                                <!-- FOOD DETAILS -->
                                 <div class="card-body pb-0">
                                     <p class="mb-0">{{ food.name }}</p>
                                 </div>
@@ -66,14 +69,14 @@
                                             {% endif %}
                                         </div>
                                     </div>
-                                    <!-- Button to View Details -->
+                                    <!-- BUTTON TO VIEW DETAILS -->
                                     <br>
                                     <div class="row">
                                         <div class="col view-details-btn-div">
                                             <a href="{% url 'food_detail' food.id %}" role="button" aria-disabled="true" class="btn view-details-btn">View Details</a>
                                         </div>
                                     </div>
-                                    <!-- Button to remove food from Wish List -->
+                                    <!-- BUTTON TO REMOVE FOOD FROM WISH LIST -->
                                     <div class="row">
                                         <div class="col wish-list-btn-div">
                                             <a href="{% url 'user_wishlist' food.id %}" role="button" aria-disabled="true" class="btn wish-list-btn">Remove From Wish List</a>
@@ -110,12 +113,12 @@
         <div class="col-12 mb-4 text-center">
             <h3 class="page-h3-title col-12 mb-4" style="padding-left: 0;">There are currently no items in your Wish
                 List.</h3>
-            <!-- Back to menu page -->
-            <a href="{% url 'foods' %}" class="btn back-btn">Back to<br>Menu</a>
+            <!-- BACK TO MENU PAGE -->
+            <a href="{% url 'foods' %}" class="btn back-btn">Back to Menu</a>
         </div>
         {% endif %}
         {% else %}
-        <!-- Information to user if navigated to in error without being signed in -->
+        <!-- ERROR MESSAGE TO DISPLAY IF USER IS NOT SIGNED IN -->
         <div class="container-fluid">
             <div class="row justify-content-center">
                 <div class="card-block">

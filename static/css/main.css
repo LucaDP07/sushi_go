@@ -37,7 +37,7 @@ body {
     width: 1.5rem;
 }
 
-/* home page */
+/* Home page */
 .brand-logo {
     width: 60px;
 }
@@ -87,21 +87,11 @@ body {
     color: #383838;
 }
 
-.back-btn:hover,
-.standard-btn:hover {
+.back-btn:hover {
     background-color: #FFA92C;
     color: #fff;
 }
 
-.standard-btn {
-    max-width: 6.6875rem;
-    min-height: 3.375rem;
-    border: 0.08rem solid #e1efe6;
-    border-radius: 0;
-    padding: 0.1rem 0.75rem;
-    background-color: #6c757d;
-    color: #fff;
-}
 
 .order-now-button:hover,
 .order-now-button:active,
@@ -213,7 +203,7 @@ input[name='q']::placeholder P {
     color: #383838;
 }
 
-/* bootstrap toasts */
+/* Bootstrap toasts */
 
 .message-container {
     position: fixed;
@@ -281,18 +271,7 @@ input[name='q']::placeholder P {
     overflow-y: auto;
 }
 
-
-/* Subscribe form */
-
-#mc_embed_signup .button .foot {
-    /* border: 1px solid #ABB0B2; */
-    border-radius: 3px;
-    border-radius: 3px;
-    border-radius: 33px;
-    padding: 40px;
-}
-
-/* --------------- footer */
+/* Footer and Mailchimp form */
 footer {
     margin-top: auto;
 }
@@ -311,14 +290,16 @@ footer {
     transition: ease-in-out all .3s;
 }
 
-.remove-footer-gutter {
-    --bs-gutter-x: 0px;
-}
-
-
 .footer-menu a {
     color: black;
     text-transform: uppercase;
+}
+
+#mc_embed_signup .button .foot {
+    border-radius: 3px;
+    border-radius: 3px;
+    border-radius: 33px;
+    padding: 40px;
 }
 
 #mc-embedded-subscribe {
@@ -429,7 +410,7 @@ footer {
     color: #FFA92C !important;
 }
 
-/* Food Form */
+/* Image field Form */
 
 .btn-file {
     position: relative;
@@ -474,7 +455,7 @@ footer {
     }
 }
 
-/* pad the top a bit when navbar is collapsed on mobile */
+/* Pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
     .header-container {
         padding-top: 116px;
