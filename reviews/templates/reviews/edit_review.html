@@ -17,13 +17,14 @@
 {% load crispy_forms_tags %}
 <!-- EDIT REVIEW FORM -->
 <div class="overlay"></div>
-<div class="container">
+<div class="container-fluid">
     <div class="row">
-        <div class="col-12">
+        <div class="col text-center mt-3">
+            <hr>
             <h1 class="text-center pt-4">Edit Review</h1>
+            <hr class="w-50 mb-1">
         </div>
     </div>
-    <br>
     <div class="row justify-content-center mb-3">
         {% if user.is_authenticated and testimonial.name == user or user.is_superuser  %}
         <div class="col-11 col-md-8 col-lg-6 mt-3">

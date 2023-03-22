@@ -392,13 +392,6 @@ footer {
     background-color: #F6f6f6;
 }
 
-.card-columns {
-    column-gap: 2rem;
-}
-
-.card-columns {
-    column-count: 2;
-}
 
 .quote {
     left: 50%;
