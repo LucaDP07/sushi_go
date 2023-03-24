@@ -78,9 +78,16 @@ Each user story was linked to an Epic.
 **Web Marketing Strategy**
 - - -
 
-- MailChimp Newsletter 
+- Email Marketing: MailChimp Newsletter 
 In order to increase engagement with the site and build a stronger relationship with its customers, the Sushi Go Team partnered with MailChimp. This is a free service to collect customers email addresses and share news, services and special offers with customers and potential customers. The feature is located on the Footer, visible in every page. The customers have the opportunity to enter their address to subscribe and get a success message once the subscription is completed. No registration to the Sushi Go website is required to benefit of this service.
 Below is a screenshot of the Sushi Go - Mailchimp dashboard.
+
+- Social Media Marketing: Facebook Page
+In order to increase traffic to the website, the Sushi Go Team has created a Facebook Business Page for organic social media marketing. The decision was taken considering the impact of the social media platform on the Irish people. We can see that in 2023 3.51 millions of irish out of 5.1 is using Facebook, and for this reason it's still considered a great option to promote the business online.
+
+- Search Engine Optimization(SEO)
+The meta keywords and description in the site's base.html have been chosen after a research conducted through Ubersuggest by Neil Patel, a SEO and content marketing tool to reflect the researches keywords.
+For SEO purposes, a sitemap.xml and robots.txt file were included to the website's root directory to improve the quality of the website and to ensure that search engines are able to understand its structure.
 
 **Structure**
 
