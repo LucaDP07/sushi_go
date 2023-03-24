@@ -86,7 +86,7 @@ Below is a screenshot of the Sushi Go - Mailchimp dashboard.
 In order to increase traffic to the website, the Sushi Go Team has created a Facebook Business Page for organic social media marketing. The decision was taken considering the impact of the social media platform on the Irish people. We can see that in 2023 3.51 millions of irish out of 5.1 is using Facebook, and for this reason it's still considered a great option to promote the business online.
 
 - Search Engine Optimization(SEO)
-The meta keywords and description in the site's base.html have been chosen after a research conducted through Ubersuggest by Neil Patel, a SEO and content marketing tool to reflect the researches keywords.
+The meta keywords and description in the site's base.html have been chosen after a keywords research conducted through Ubersuggest by Neil Patel, a SEO and content marketing tool.
 For SEO purposes, a sitemap.xml and robots.txt file were included to the website's root directory to improve the quality of the website and to ensure that search engines are able to understand its structure.
 
 **Structure**
