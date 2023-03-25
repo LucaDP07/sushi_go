@@ -21,7 +21,7 @@ class Testimonials(generic.ListView):
 class AddTestimonial(
         LoginRequiredMixin, SuccessMessageMixin, generic.CreateView):
 
-    """This view is used to allow a user to add a testimonial"""
+    """This view is used to allow a user to add a review"""
     form_class = TestimonialForm
     template_name = 'reviews/add_review.html'
     success_message = "Your review was added successfully"
@@ -40,16 +40,16 @@ class EditTestimonial(
         SuccessMessageMixin, generic.UpdateView):
 
     """
-    This view is used to allow logged in users to edit their own testimonials
+    This view is used to allow logged in users to edit their own reviews
     """
     model = Testimonial
     form_class = TestimonialForm
     template_name = 'reviews/edit_review.html'
-    success_message = "Testminonial edited successfully"
+    success_message = "Review edited successfully"
 
     def test_func(self):
         """
-        Prevent another user from editing user's testminonial
+        Prevent another user from editing user's review
         """
         testimonial = self.get_object()
         return testimonial.name == self.request.user\
@@ -59,16 +59,16 @@ class EditTestimonial(
 class DeleteTestimonial(
         LoginRequiredMixin, UserPassesTestMixin, generic.DeleteView):
     """
-    This view is used to allow logged in users to delete their own testimonials
+    This view is used to allow logged in users to delete their own reviews
     """
     model = Testimonial
     template_name = 'reviews/delete_review.html'
-    success_message = "Testminonial successfully deleted"
+    success_message = "Review successfully deleted"
     success_url = reverse_lazy('testimonials')
 
     def test_func(self):
         """
-        Prevent another user from deleting another user's testminonial
+        Prevent another user from deleting another user's review
         """
         testimonial = self.get_object()
         return testimonial.name == self.request.user\

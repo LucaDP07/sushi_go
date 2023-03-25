@@ -91,12 +91,13 @@ For SEO purposes, a sitemap.xml and robots.txt file were included to the website
 
 **Structure**
 
-The user will first see the Home Page where the purpose of the website is made clear with a brief introduction. Users can also see a list of 6 posts.
+The users will first see the Home Page, where they can find a call to action button to start exploring the menu. A navbar is also available and give access to all the necessary info.
 
-Both registered and unregistered users can read the posts, but only registered users can interact with them by leaving a comment or liking the post itself.
-Post detail page contains details of the post, comments and number of likes.
+Both registered and unregistered users can place their own order and complete the checkout process, but only registered users can interact with the page by creating their personal wish list, leaving a feedback or updating their own profile details.
 
-The "Add a trip" page is accessible only for registered users. This page can be accessed by clicking the 'Add a trip' button in the navigation bar which is only visible for a registered user. After creating the post, the user can see it on the Home Page. Users are able to edit or delete their own posts by clicking the Edit/Delete button located underneath the post. These buttons are only visible to the owner of the post.
+Simply by clicking on "View details" more information about the dish will be revealed and a "Add to basket" button will also be available.
+
+The "Wish list" page is accessible only for registered users. This page can be accessed by clicking the 'Wish list' button in the navigation bar, which is only visible for a registered user. After completing the log in, the user will see a "Add to wish list" button on the menu page, right under the "View details" button and the picture of the dish. Users are then able to edit their own wish list as they like.
 
 **WIREFRAMES**
 - - -
@@ -133,60 +134,93 @@ The "Add a trip" page is accessible only for registered users. This page can be 
 **FEATURES**
 - - -
 
- - Navigation menu
+ - NavBar and SearchBar
  
- The navigation menu is clear and consistent throughout the site to provide the users an easy navigation. Links to Home, Add a trip, Register and Sign In/Out are available. If the user is not signed in the Sign in and Register links are visible in the navbar. If the user is signed in the Sign In and Register links are replaced by a Log Out link and the Add a trip link is visible. While the Logo will be always displayed in any screen, the other links that the user can find in the bar, will switch to hamburger on tablets and mobiles.
+ The navigation menu is clear and consistent throughout the site to provide the users an easy navigation. Links to the Menu Page, Testimonials Page, Contact Page, Markets Page, Privacy Policy, Basket Page, Search bar, Register and Sign In/Out are available. If the user is not signed in the Sign in and Register links are visible in the navbar. If the user is signed in the Sign In and Register links are replaced by a Sign Out, Profile and a Wish List link. While the Account and Basket icons will be always displayed in any screen, the other links that the user can find in the bar, will switch to hamburger on tablets and mobiles.
 
  ![Alternate text](/static/images/navbar.png)
 
  - Footer
 
- At the bottom of the page we can find the footer with the links to direct the user to the Facebook, Instagram and Twitter pages.
+At the bottom of the page we can find the footer with the links to direct the user to the Facebook, Instagram, LinkedIn and Twitter pages. The name of the Company and the address is also visible. The footer is available on all site pages.
  
  ![Alternate text](/static/images/footer.png)
 
  - Home Page
 
- 1.A hero image is displayed at the top of the page with overlay text welcoming the user to the website. Right below the users can also find a short description of the purpose of the page and what they will find on it.
+ A background image is displayed at the center, between the Navbar and the footer, with a Call to action button also available.
 
 ![Alternate Text](/static/images/home_page.png)
 
- - Trips section
+- Menu section
  
- Right below the brief description of the purpose of the page, the users will find a list of six posts per page(max.) to avoid loading time issues.
+When clicking the 'Menu' link in the navbar the dropdown menu will show all the different categories including 'Nigiri', 'Osomaki','Sashimi', 'Temaki', 'Tempura', 'Okura Special Roll', 'Noodles' and 'Side dishes'. There is also the option to select 'All' and see the whole menu displayed.
+Each card shows an image of the dish, its title, rating and price.
+If the user is a superuser, edit and delete buttons will be available at the bottom of the card.
 
  ![Alternate text](/static/images/trips_section.png)
 
- - Add a trip form
+ - Food detail
  
- When the users are logged in, they can see on the navigation bar the option "Add a trip". Simply by clicking on it the form opens and the user can enter all the fields to add a post and create a new content which will be displayed on the website.
+By clicking on an individual card the user get access to the Food detail page, which provides additional information about the dish.
+The quantity buttons are located right under the description and can be used to add items to the basket.
+The plus and minus buttons increase and decrease the input value.
+Clicking the 'Add to Basket' button adds that amount of food selected to the basket.
+Clicking the 'Back to Menu' button takes the user back to the Menu page.
 
  ![Alternate text](/static/images/form.png)
  
- - Post Detail page
+ - Basket Page
  
- Accessed by any user simply by clicking on the post itself. The not logged in users can also read the approved comments right below the post. If the user is logged in, instead, there is another function that allows to press the Like button and leave a comment regarding the post. The comments entered here need to be reviewed by the site owner before being displayed in this post detail page.
+The Basket Page allows the user to view a summary of the items in the basket and their total prices.
+Users can change the quantity of the food in the basket or remove it entirely, before proceeding to the secure checkout page. Underneath the grand total a message will be displayed, informing the users of how much more they need to spend in order to receive free delivery if they haven't already met the free delivery threshold (€30). Also a button to enable the users to go "Back to Menu' and add further items to their basket is available. 
 
  ![Alternate text](/static/images/post_detail.png)
 
+ - Checkout Page
+In order to complete place an order and complete the checkout process, there's no need to be registered with Sushi Go.
+However, only registered users can save their info for future orders, if they wish so.
+The checkout page is simple and easy to use. It also allows the user to take a look at the "Order Summary" before submit their credit card details.
+
  ![Alternate text](/static/images/comments_section.png)
 
- - Edit Post page
+- Checkout Success Page
+Once the order has been processed, a checkout success page is loaded to inform the user the order was successful.
+An email with the order confirmation is also sent to the user.
 
- The Edit post page is accessed by edit post button which is available in the post detail page and it's visible for the user's own post only so that the post can only be edited by its own user or by superuser using the admin page. If the user confirms the changes made to the post, will be redirected to the Home Page and a message will show below the navbar to inform that the post was succesfully edited.
+ ![Alternate text](/static/images/comments_section.png)
 
- ![Alternate text](/static/images/edit_delete.png)
+- Wish List
+By clicking on the 'Account' link in the navbar, if signed in, a user can benefit of the wish list feature. Thanks to it the user will have the opportunity to add a dish to the wish list for a future purchase. An option to remove the dishes selected from the wish list is also available.
 
- - Delete Post Page
+ ![Alternate text](/static/images/comments_section.png)
 
- The owner of the post also have another button available, which is the Delete Post button. If the user clicks on it a Delete Post page displays and asks the user for confirmation to delete the post. Users can either click on "Yes, delete post!" or cancel and go back to the Home Page. 
- If the user confirms to delete the post, will be redirected to the Home Page and a message will show below the navbar to inform that the post was deleted.
+- Testimonials
+By clicking on the link in the NavBar, the user will access to the Testimonials page. Unregistered users will be able to read all the reviews left by others, while registered users will also be able to create their own review and see it displayed with their username and the date of submission.
+
+ ![Alternate text](/static/images/comments_section.png)
+
+ - Add Review Page
+ In the Testimonials page users will find a "Add your review" button. If not signed a Sign In page will display. If signed a form opens and the user can enter all the fields to add a review which will be displayed on the website.
+
+ ![Alternate text](/static/images/comments_section.png)
+
+ - Edit Review Page
+
+The Edit review page is accessed by the Edit button, made available beside the review itself and visible only to its owner, so that it can only be edited by its own user or by superuser using the admin page. If the user confirms the changes made to the review, will be redirected to the Testimonials page and a message will show below the navbar to inform that the review was succesfully edited.
+
+ ![Alternate text](/static/images/comments_section.png)
+
+ - Delete Review Page
+
+ The owner of the review also have another button available, which is the Delete button. If the user clicks on it a Delete Review page displays and asks the user for confirmation to delete the review. Users can either click on "Delete" or cancel and go back to the Testimonials Page. 
+ If the user confirms to delete the review, will be redirected to the Testimonials Page and a message will show below the navbar to inform that the review was deleted.
 
  ![Alternate text](/static/images/edit_delete.png)
 
  - Register Page
 
- This page can be opened from the register button in the navigation bar. New visitors are simply asked to enter username, password and password confirmation to register. Email field can be left blank as it is optional. Once successfully registered, users will be redirected to the Home Page and have access to all the features available for registered users.
+ This page can be opened from the register button in the navigation bar. New visitors are asked to enter username, email, email confirmation, password and password confirmation to register. Once successfully registered, users will be asked to check their email to confirm their registration and have access to all the features available for registered users.
 
  ![Alternate text](/static/images/signup.png)
 
@@ -198,9 +232,38 @@ The "Add a trip" page is accessible only for registered users. This page can be 
 
  - Sign Out Page
 
- Once a user is logged in, the Sign In button in the navigation bar will be replaced with the Logout button. If they want to logout all they need to do is simply click this button and confirm to sign out. Once again, users will be redirected to the Home Page and a message to inform them that they logged out successfully will be displayed under the navigation bar.
+ Once a user is logged in, the Sign In button in the navigation bar will be replaced with the Sign Out button. If they want to sign out all they need to do is simply click this button and confirm their decision. Once again, users will be redirected to the Home Page and a message to inform them that they sign out successfully will be displayed under the navigation bar.
 
  ![Alternate text](/static/images/signout.png)
+
+ - Markets Page
+By clicking on the "About" button in the NavBar, the user has the opportunity to select the Markets page and see all the local markets Sushi Go collaborate with. This is an opportunity for the user to know where to find in town their favourite sushi, while around. Each card contains the name of the market, a picture of it and a link to its official page with all the important info.
+
+![Alternate text](/static/images/signout.png)
+
+ - Contact Us Page
+
+By clicking on the "About" button in the NavBar, the user has the opportunity to select the "Contact Us" feature. Registered and not registered users can benefit of this option.
+If the user is logged in, the email field is prepopulated with the user's email address.
+The form contains all the fields required to submit the contact request. If any of these fields are left blank or with just whitespace then an error message will appear on that particular field, notifying the user of the issue.
+Once the form is submitted, the user receives an email confirmation of their request so that they have a record of it.
+
+![Alternate text](/static/images/signout.png)
+
+- Privacy Policy
+The "About" button also contains a link to the Sushi Go Privacy Policy, to ensure that the website is compliant with the European Privacy Policy Rules.
+
+![Alternate text](/static/images/signout.png)
+
+- User Profile
+The 'Account' link in the navbar, allows the signed in users to acces their own profile and update their saved delivery details and view order history. Each transaction contains all the necessary info. The 'Order Number' can be clicked to open the order confirmation page.
+
+![Alternate text](/static/images/signout.png)
+
+- Admin - Menu Management
+If logged in, super users can access to the "Menu Management" page via the "Account" button. Thanks to this feature the Admin can update the menu selection by adding new dishes to the offer, without accessing to the admin area. Once logged in, the Admin can also edit or delete a dish within the Food Details page, thanks to the specific 'Edit' or 'Delete' buttons.
+
+![Alternate text](/static/images/signout.png)
  
 
 **TECHNOLOGIES USED**
