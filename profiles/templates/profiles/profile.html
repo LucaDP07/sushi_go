@@ -58,6 +58,15 @@
                                         </a>
                                     </td>
                                     <td>{{ order.date }}</td>
+                                    <td>
+                                        <ul class="list-unstyled">
+                                            {% for item in order.lineitems.all %}
+                                                <li class="small">
+                                                    {{ item.food.name }} x{{ item.quantity }}
+                                                </li>
+                                            {% endfor %}
+                                        </ul>
+                                    </td>
                                     <td>€{{ order.grand_total }}</td>
                                 </tr>
                             {% endfor %}
