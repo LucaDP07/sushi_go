@@ -134,19 +134,19 @@ The "Wish list" page is accessible only for registered users. This page can be a
 **FEATURES**
 - - -
 
- - NavBar and SearchBar
+ - NavBar.
  
  The navigation menu is clear and consistent throughout the site to provide the users an easy navigation. Links to the Menu Page, Testimonials Page, Contact Page, Markets Page, Privacy Policy, Basket Page, Search bar, Register and Sign In/Out are available. If the user is not signed in the Sign in and Register links are visible in the navbar. If the user is signed in the Sign In and Register links are replaced by a Sign Out, Profile and a Wish List link. While the Account and Basket icons will be always displayed in any screen, the other links that the user can find in the bar, will switch to hamburger on tablets and mobiles.
 
  ![Alternate text](/static/images/navbar.png)
 
- - Footer
+ - Footer.
 
 At the bottom of the page we can find the footer with the links to direct the user to the Facebook, Instagram, LinkedIn and Twitter pages. The name of the Company and the address is also visible. The footer is available on all site pages.
  
  ![Alternate text](/static/images/footer.png)
 
- - Home Page
+ - Home Page.
 
  A background image is displayed at the center, between the Navbar and the footer, with a Call to action button also available.
 
@@ -264,6 +264,12 @@ The 'Account' link in the navbar, allows the signed in users to acces their own 
 If logged in, super users can access to the "Menu Management" page via the "Account" button. Thanks to this feature the Admin can update the menu selection by adding new dishes to the offer, without accessing to the admin area. Once logged in, the Admin can also edit or delete a dish within the Food Details page, thanks to the specific 'Edit' or 'Delete' buttons.
 
 ![Alternate text](/static/images/signout.png)
+
+- Page 404 - Page Not Found
+In case of any typing URL error or if the page the user is looking for doesn't exist, this Error page will be displayed and a link to the Home page will be available to allow the user to get back to the Sushi Go website.
+
+![Alternate text](/static/images/signout.png)
+
  
 
 **TECHNOLOGIES USED**
@@ -273,13 +279,17 @@ If logged in, super users can access to the "Menu Management" page via the "Acco
 - CSS: In order to style the content created with HTML, and give responsiveness to the pages, the CSS language has been used.
 - Java Script: JS was used with Bootstrap to provide interaction on the front-end.
 - Python: It was used to code the back end of the project.
-- Pixabay: I used this platform for all the images displayed around the website.
+- Pixabay: I used this platform for the background image displayed on the Home page.
 - Bootstrap: Bootstrap was used to style the website, add responsiveness and interactivity.
-- Cloudinary: Cloudinary was used for hosting the images.
+- AWS: Amazon Web Services was used for hosting static and media files for the website.
 - Balsamiq Wireframes: I used it to produce low fidelity wireframes to organise the structure of the pages.
+- Mailchimp: To create the newsletter signup form.
+- Stripe: To process all online and credit card purchases on the website.
+- Font Awesome: was used for all the icons on the website.
 - Gitpod was used to develop the project.
 - GitHub was used to host repository.
 - Heroku was used to deploy the website.
+- ElephantSQL was used to provide a configured and optimized PostgreSQL database.
 - Django was used as the main python framework for the development of the project.
 - Django AllAuth was used to provide user account management functionality.
 - Google Chrome Dev Tools was used to check reponsiveness.
@@ -292,16 +302,21 @@ Manual testing was carried out to ensure the site works as intended.
 All the pages of the website have ben tested using the developer tools in Google Chrome. The code had to be changed along the process in order to achieve the responsiveness required for the project. The preview from Gitpod helped to constantly check all the changes made.
 
 Testing was performed using a MacBook Air (M1, 2020) on macOS Monterey with the following browsers:
-- Google Chrome 102.0.5005.61
+- Google Chrome 111.0.5563.110
 - Safari 15.3
-- Mozilla Firefox 101.0.1
+- Mozilla Firefox 111.0.1 
 
 After testing the website I can confirm the project it's responsive in its all pages and works properly on all standard screen sizes.
 
 The forms are working in each section of the project.
-- The users can add, edit and delete their own posts.
-- Comments can be added through the comment form. To be displayed need to be approved by the owner of the website.
-
+- The users can add, edit and delete their own reviews.
+- The users can utilise the Contact form and get a confirmation email.
+- The users can update their profile details on their personal account.
+- The users can fill the checkout form to complete their order.
+- The admin can add, edit and delete items from the menu.
+All the internal links are working and bring the user to the right page on the website.
+All the external links are working and bring the user to the right page by opening a new browser tab.
+The Signup, Signin and Signout features have no issues and are working properly.
 
 * VALIDATOR TESTING
 
@@ -355,33 +370,83 @@ Scroll down to Add-Ons, search for and select 'Heroku Postgres'.
 
 - In the setting tab, click on Reveal Config Vars button then copy the value for DATABASE_URL key.
 
+- Install 2 more requirements: 
+1. pip3 install dj_databse_url
+2. pip3 install psycopg2-binary
+
+- Create requirements.txt file by typing pip3 freeze --local > requirements.txt
+
 - In Gitpod create a new env.py file and import the os library. Heroku Config vars need to be set accordingly including DATABASE_URL and SECRET_KEY.
 
-- In the settings.py file within the django app, import Path from pathlib, import os and import dj_database_url
-- Insert the line if os.path.isfile("env.py"): import env
-- Remove the insecure secret key that django has in the settings file by default and replace it with SECRET_KEY = os.environ.get('SECRET_KEY')
-- Replace the databases section with DATABASES = { 'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))}
-- In the Gitpod terminal, migrate the change by python3 manage.py migrate.
-- Login to Cloudinary and copy the API Environment variable and paste in env.py and also Config Vars in Heroku.
-- In Heroku config vars add DISABLE_COLLECTSTATIC with value of '1' (this must be removed for final deployment)
-- Add Cloudinary libraries to installed apps section of settings.py as per follow:
+- In settings.py file import dj_database_url, comment out the default configurations within database settings and add the following:
 
-- - Add 'cloudinary_storage', before 'django.contrib.staticfiles', and 'cloudinary' right after it.
+DATABASES = {
+    'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+}
 
-- In the Settings.py file - add the STATIC files settings - the url, storage path, directory path, root path, media url and default file storage path.
+- Create an if statement in settings.py to run the postgres database when using the app on heroku or sqlite if not
+    if 'DATABASE_URL' in os.environ:
+        DATABASES = {
+            'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+        }
+    else:
+        DATABASES = {
+            'default': {
+                'ENGINE': 'django.db.backends.sqlite3',
+                'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+            }
+    }
 
-- Set TEMPLATES_DIR just below BASE_DIR and insert TEMPLATES_DIR in TEMPLATES array 'DIRS': []
+- Create requirements.txt file by typing pip3 freeze --local > requirements.txt
 
-- Set ALLOWED_HOSTS as 'traveldream.herokuapp.com', 'localhost'
+- Create a file named "Procfile" in the main directory and add the following: web: gunicorn project-name.wsgi:application
 
-- Create Procfile and add the code: web gunicorn traveldream.wsgi
-- On GitHub add, commit and push the changed files.
-- On Heroku click on the Deploy tab, connect to GitHub and search for the repository then Connect
-- Click on Deploy Branch.
-- Once the development process is complete, change the debug setting to: DEBUG = False in settings.py.
-- Considering for this project the summernote editor was used in Heroku add: X_FRAME_OPTIONS = 'SAMEORIGIN' to settings.py.
-- In Heroku settings config vars change the DISABLE_COLLECTSTATIC value to 0.
+- Add Heroku to the ALLOWED_HOSTS list in settings.py in the format ['app_name.heroku.com', 'localhost']
+
+- Add the following Config Vars in Heroku:
+1. A new record with SECRET_KEY
+2. A new record with the AWS_ACCESS_KEY_ID
+3. A new record with the AWS_SECRET_ACCESS_KEY
+4. A new record with the EMAIL_HOST_PASS
+5. A new record with the EMAIL_HOST_USER
+6. A new record with the STRIPE_PUBLIC_KEY
+7. A new record with the STRIPE_SECRET_KEY
+8. A new record with the STRIPE_WH_SECRET
+9. A new record with the DISABLE_COLLECTSTATIC = 1 (this must be removed for final deployment)
+10. A new record with the USE_AWS
+
+- On Heroku click on the Deploy tab, connect to GitHub and search for the repository then Connect.
+- Scroll to the bottom of the deploy page and either click Enable Automatic Deploys for automatic deploys.
 - Click on Deploy Branch. When the app is deployed a message 'Your app was successfully deployed' will be shown. Click 'view' to see the deployed app in the browser.
+
+* AWS Set Up
+
+Considering the development of the site could require a significant volume of product images, AWS has been used for hosting the images. To implement this you will need and AWS account and to create an S3 Bucket and User Profile.
+To serve the images you will need to add the following config to your settings.py file.
+
+if 'USE_AWS' in os.environ:
+    # Cache control
+    AWS_S3_OBJECT_PARAMETERS = {
+        'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
+        'CacheControl': 'max-age=94608000',
+    }
+    # Bucket Config
+    AWS_STORAGE_BUCKET_NAME = 'lucadp07-sushi-go'
+    AWS_S3_REGION_NAME = "eu-west-1"
+    AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
+    AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
+    AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
+
+    # Static and media files
+    STATICFILES_STORAGE = 'custom_storages.StaticStorage'
+    STATICFILES_LOCATION = 'static'
+    DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
+    MEDIAFILES_LOCATION = 'media'
+
+    # Override static and media URLs in production
+    STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
+    MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
+
 
 During my work to the project, I had to migrate my database from Heroku to ElephantSQL. Here are the stpes I've taken:
 
