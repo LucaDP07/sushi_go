@@ -26,7 +26,8 @@ def all_foods(request):
                 messages.error(request, "Please enter your search criteria!")
                 return redirect(reverse('foods'))
 
-            queries = Q(name__icontains=query) | Q(description__icontains=query)
+            queries = Q(name__icontains=query) | Q(
+                description__icontains=query)
             foods = foods.filter(queries)
 
     context = {
@@ -64,7 +65,9 @@ def add_food(request):
             messages.success(request, 'Menu successfully updated!')
             return redirect(reverse('food_detail', args=[food.id]))
         else:
-            messages.error(request, 'Failed to update menu. Please ensure the form is valid.')
+            messages.error(
+                request, 'Failed to update menu.\
+                    Please ensure the form is valid.')
     else:
         form = FoodForm()
 
@@ -91,7 +94,9 @@ def edit_food(request, food_id):
             messages.success(request, 'Update Successful!')
             return redirect(reverse('food_detail', args=[food.id]))
         else:
-            messages.error(request, 'Updated Failed. Please ensure the form is valid.')
+            messages.error(
+                request, 'Updated Failed.\
+                    Please ensure the form is valid.')
     else:
         form = FoodForm(instance=food)
         messages.info(request, f'You are editing {food.name}')

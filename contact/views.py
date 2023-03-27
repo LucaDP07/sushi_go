@@ -74,4 +74,3 @@ class ContactUs(View):
                 }
 
         return render(request, target, context)
-

@@ -23,4 +23,3 @@ class Contact(models.Model):
 
     def __str__(self):
         return f"Enquiry: {self.subject} from {self.name}"
-

@@ -57,7 +57,7 @@ There are 5 EPICS and 21 USER STORIES.
 - USER STORIES:
 1. As a website user, I can Make an order by using the website checkout system so that I can complete my purchase.(Checkout #18)
 2. As a website user, I can adjust a number of meals in different quantities to my basket so that I can easily make changes before I purchase(Adjust Number of Items #20)
-3. As a website user, I can add the quantity of individual meals in my basket so that I can complete the purchase when I am ready.(Add items to the basket #21)
+3. As a website user, I can add the quantity of individual meals in my basket so that I can complete the purchase.(Add items to the basket #21)
 4. As a website user, I can view the contents of my basket at any time so that I can see what is included and the total cost.(View Basket #22)
 5. As a website user, I can view an order confirmation after checkout and receive an email confirmation of my order so that I know my purchase was successful.(Order confirmation message and email #23)
 
