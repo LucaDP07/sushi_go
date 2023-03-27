@@ -37,7 +37,7 @@ There are 5 EPICS and 21 USER STORIES.
 3. As a website user, I can view a specific category of dishes so I can browse the type of meal I'm looking for.(Category #3)
 4. As a website user, I can Click on a dish to read and view the full details so that I understand what I can get.(Food Details #4)
 5. As a website user, I can read reviews left by others so I see the feedback provided.(View Reviews #5)
-6. As a website user, I can see a list of markets the business takes part so that I can **easily find them in town".(Markets #6)
+6. As a website user, I can see a list of markets the business takes part so that I can easily find them in town.(Markets #6)
 
 2.EPIC: User Account and Profile
 - USER STORIES:
@@ -56,7 +56,7 @@ There are 5 EPICS and 21 USER STORIES.
 4.EPIC: Purchasing
 - USER STORIES:
 1. As a website user, I can Make an order by using the website checkout system so that I can complete my purchase.(Checkout #18)
-2. As a logged in user, I can adjust a number of meals in different quantities to my basket so that I can easily make changes before I purchase(Adjust Number of Items #20)
+2. As a website user, I can adjust a number of meals in different quantities to my basket so that I can easily make changes before I purchase(Adjust Number of Items #20)
 3. As a website user, I can add the quantity of individual meals in my basket so that I can complete the purchase when I am ready.(Add items to the basket #21)
 4. As a website user, I can view the contents of my basket at any time so that I can see what is included and the total cost.(View Basket #22)
 5. As a website user, I can view an order confirmation after checkout and receive an email confirmation of my order so that I know my purchase was successful.(Order confirmation message and email #23)
@@ -70,9 +70,9 @@ There are 5 EPICS and 21 USER STORIES.
 
 For the development of the website the Agile methodology was taken using GitHub functions which are issues, milestones, iterations and Kanban board.
 
-1.Milestones were used to create Epics with a custom template.
+1. Milestones were used to create Epics with a custom template.
 
-2.Issues were used to create User Stories with a custom template. Eash user story has been mapped out using the Kanban board format. Each one has acceptance criteria and tasks.
+2. Issues were used to create User Stories with a custom template. Eash user story has been mapped out using the Kanban board format. Each one has acceptance criteria and tasks.
 Each user story was linked to an Epic.
 
 **Web Marketing Strategy**
@@ -138,21 +138,21 @@ The "Wish list" page is accessible only for registered users. This page can be a
 **FEATURES**
 - - -
 
- - NavBar.
+- NavBar.
  
- The navigation menu is clear and consistent throughout the site to provide the users an easy navigation. Links to the Menu Page, Testimonials Page, Contact Page, Markets Page, Privacy Policy, Basket Page, Search bar, Register and Sign In/Out are available. If the user is not signed in the Sign in and Register links are visible in the navbar. If the user is signed in the Sign In and Register links are replaced by a Sign Out, Profile and a Wish List link. While the Account and Basket icons will be always displayed in any screen, the other links that the user can find in the bar, will switch to hamburger on tablets and mobiles.
+The navigation menu is clear and consistent throughout the site to provide the users an easy navigation. Links to the Menu Page, Testimonials Page, Contact Page, Markets Page, Privacy Policy, Basket Page, Search bar, Register and Sign In/Out buttons are available. If the user is not signed in the Sign in and Register links are visible in the navbar. If the user is signed in the Sign In and Register links are replaced by a Sign Out, Profile and a Wish List link. While the Account and Basket icons will always be displayed in any screen, the other links that the user can find in the bar, will switch to hamburger on tablets and mobiles.
 
- ![Alternate text](/static/images/navbar.png)
+![Alternate text](/static/images/navbar.png)
 
- - Footer.
+- Footer.
 
-At the bottom of the page we can find the footer with the links to direct the user to the Facebook, Instagram, LinkedIn and Twitter pages. The name of the Company and the address is also visible. The footer is available on all site pages.
+At the bottom of the page we can find the footer with the newsletter signup form and links to direct the user to the Facebook, Instagram, LinkedIn and Twitter pages. The name of the Company and the address is also visible. The footer is available on all site pages.
  
- ![Alternate text](/static/images/footer.png)
+![Alternate text](/static/images/footer.png)
 
- - Home Page.
+- Home Page.
 
- A background image is displayed at the center, between the Navbar and the footer, with a Call to action button also available.
+A background image is displayed at the center, between the Navbar and the footer, with a Call to action button also available.
 
 ![Alternate Text](/static/images/home_page.png)
 
@@ -162,9 +162,9 @@ When clicking the 'Menu' link in the navbar the dropdown menu will show all the 
 Each card shows an image of the dish, its title, rating and price.
 If the user is a superuser, edit and delete buttons will be available at the bottom of the card.
 
- ![Alternate text](/static/images/trips_section.png)
+![Alternate text](/static/images/trips_section.png)
 
- - Food detail
+- Food detail page
  
 By clicking on an individual card the user get access to the Food detail page, which provides additional information about the dish.
 The quantity buttons are located right under the description and can be used to add items to the basket.
@@ -172,80 +172,86 @@ The plus and minus buttons increase and decrease the input value.
 Clicking the 'Add to Basket' button adds that amount of food selected to the basket.
 Clicking the 'Back to Menu' button takes the user back to the Menu page.
 
- ![Alternate text](/static/images/form.png)
+![Alternate text](/static/images/form.png)
  
- - Basket Page
+- Basket Page
  
 The Basket Page allows the user to view a summary of the items in the basket and their total prices.
 Users can change the quantity of the food in the basket or remove it entirely, before proceeding to the secure checkout page. Underneath the grand total a message will be displayed, informing the users of how much more they need to spend in order to receive free delivery if they haven't already met the free delivery threshold (€30). Also a button to enable the users to go "Back to Menu' and add further items to their basket is available. 
 
- ![Alternate text](/static/images/post_detail.png)
+![Alternate text](/static/images/post_detail.png)
 
- - Checkout Page
-In order to complete place an order and complete the checkout process, there's no need to be registered with Sushi Go.
+- Checkout Page
+
+To place an order and complete the checkout process, there's no need to be registered with Sushi Go.
 However, only registered users can save their info for future orders, if they wish so.
 The checkout page is simple and easy to use. It also allows the user to take a look at the "Order Summary" before submit their credit card details.
 
- ![Alternate text](/static/images/comments_section.png)
+![Alternate text](/static/images/comments_section.png)
 
 - Checkout Success Page
+
 Once the order has been processed, a checkout success page is loaded to inform the user the order was successful.
 An email with the order confirmation is also sent to the user.
 
- ![Alternate text](/static/images/comments_section.png)
+![Alternate text](/static/images/comments_section.png)
 
 - Wish List
+
 By clicking on the 'Account' link in the navbar, if signed in, a user can benefit of the wish list feature. Thanks to it the user will have the opportunity to add a dish to the wish list for a future purchase. An option to remove the dishes selected from the wish list is also available.
 
- ![Alternate text](/static/images/comments_section.png)
+![Alternate text](/static/images/comments_section.png)
 
 - Testimonials
+
 By clicking on the link in the NavBar, the user will access to the Testimonials page. Unregistered users will be able to read all the reviews left by others, while registered users will also be able to create their own review and see it displayed with their username and the date of submission.
 
- ![Alternate text](/static/images/comments_section.png)
+![Alternate text](/static/images/comments_section.png)
 
- - Add Review Page
- In the Testimonials page users will find a "Add your review" button. If not signed a Sign In page will display. If signed a form opens and the user can enter all the fields to add a review which will be displayed on the website.
+- Add Review Page
 
- ![Alternate text](/static/images/comments_section.png)
+In the Testimonials page users will find a "Add your review" button. If not signed a Sign In page will display. If signed a form opens and the user can enter all the fields to add a review which will be displayed on the website.
 
- - Edit Review Page
+![Alternate text](/static/images/comments_section.png)
 
-The Edit review page is accessed by the Edit button, made available beside the review itself and visible only to its owner, so that it can only be edited by its own user or by superuser using the admin page. If the user confirms the changes made to the review, will be redirected to the Testimonials page and a message will show below the navbar to inform that the review was succesfully edited.
+- Edit Review Page
 
- ![Alternate text](/static/images/comments_section.png)
+The Edit review page is accessed by the Edit button, made available beside the review itself and visible only to its owner, so that it can only be edited by its own user or by superuser. If the user confirms the changes made to the review, will be redirected to the Testimonials page and a message will show below the navbar to inform that the review was succesfully edited.
 
- - Delete Review Page
+![Alternate text](/static/images/comments_section.png)
 
- The owner of the review also have another button available, which is the Delete button. If the user clicks on it a Delete Review page displays and asks the user for confirmation to delete the review. Users can either click on "Delete" or cancel and go back to the Testimonials Page. 
- If the user confirms to delete the review, will be redirected to the Testimonials Page and a message will show below the navbar to inform that the review was deleted.
+- Delete Review Page
 
- ![Alternate text](/static/images/edit_delete.png)
+The owner of the review also have another button available, which is the Delete button. If the user clicks on it a Delete Review page displays and asks the user for confirmation to delete the review. Users can either click on "Delete" or cancel and go back to the Testimonials Page. 
+If the user confirms to delete the review, will be redirected to the Testimonials Page and a message will show below the navbar to inform that the review was deleted.
 
- - Register Page
+![Alternate text](/static/images/edit_delete.png)
 
- This page can be opened from the register button in the navigation bar. New visitors are asked to enter username, email, email confirmation, password and password confirmation to register. Once successfully registered, users will be asked to check their email to confirm their registration and have access to all the features available for registered users.
+- Register Page
 
- ![Alternate text](/static/images/signup.png)
+This page can be opened from the register button in the navigation bar. New visitors are asked to enter username, email, email confirmation, password and password confirmation to register. Once successfully registered, users will be asked to check their email to confirm their registration and have access to all the features available for registered users.
 
- - Sign In Page
+![Alternate text](/static/images/signup.png)
 
- The Sign In button can be accessed to login. Username and password will be required. On successful login, users will be redirected to the Home Page and a message to inform them that they logged in successfully will be displayed under the navigation bar.
+- Sign In Page
 
- ![Alternate text](/static/images/signin.png)
+The Sign In button can be accessed to login. Username and password will be required. On successful login, users will be redirected to the Home Page and a message to inform them that they logged in successfully will be displayed under the navigation bar.
 
- - Sign Out Page
+![Alternate text](/static/images/signin.png)
 
- Once a user is logged in, the Sign In button in the navigation bar will be replaced with the Sign Out button. If they want to sign out all they need to do is simply click this button and confirm their decision. Once again, users will be redirected to the Home Page and a message to inform them that they sign out successfully will be displayed under the navigation bar.
+- Sign Out Page
 
- ![Alternate text](/static/images/signout.png)
+Once a user is logged in, the Sign In button in the navigation bar will be replaced with the Sign Out button. If they want to sign out all they need to do is simply click this button and confirm their decision. Once again, users will be redirected to the Home Page and a message to inform them that they sign out successfully will be displayed under the navigation bar.
 
- - Markets Page
+![Alternate text](/static/images/signout.png)
+
+- Markets Page
+
 By clicking on the "About" button in the NavBar, the user has the opportunity to select the Markets page and see all the local markets Sushi Go collaborate with. This is an opportunity for the user to know where to find in town their favourite sushi, while around. Each card contains the name of the market, a picture of it and a link to its official page with all the important info.
 
 ![Alternate text](/static/images/signout.png)
 
- - Contact Us Page
+- Contact Us Page
 
 By clicking on the "About" button in the NavBar, the user has the opportunity to select the "Contact Us" feature. Registered and not registered users can benefit of this option.
 If the user is logged in, the email field is prepopulated with the user's email address.
@@ -255,26 +261,29 @@ Once the form is submitted, the user receives an email confirmation of their req
 ![Alternate text](/static/images/signout.png)
 
 - Privacy Policy
+
 The "About" button also contains a link to the Sushi Go Privacy Policy, to ensure that the website is compliant with the European Privacy Policy Rules.
 
 ![Alternate text](/static/images/signout.png)
 
 - User Profile
+
 The 'Account' link in the navbar, allows the signed in users to acces their own profile and update their saved delivery details and view order history. Each transaction contains all the necessary info. The 'Order Number' can be clicked to open the order confirmation page.
 
 ![Alternate text](/static/images/signout.png)
 
 - Admin - Menu Management
+
 If logged in, super users can access to the "Menu Management" page via the "Account" button. Thanks to this feature the Admin can update the menu selection by adding new dishes to the offer, without accessing to the admin area. Once logged in, the Admin can also edit or delete a dish within the Food Details page, thanks to the specific 'Edit' or 'Delete' buttons.
 
 ![Alternate text](/static/images/signout.png)
 
 - Page 404 - Page Not Found
+
 In case of any typing URL error or if the page the user is looking for doesn't exist, this Error page will be displayed and a link to the Home page will be available to allow the user to get back to the Sushi Go website.
 
 ![Alternate text](/static/images/signout.png)
 
- 
 
 **TECHNOLOGIES USED**
 - - -
@@ -384,12 +393,12 @@ Scroll down to Add-Ons, search for and select 'Heroku Postgres'.
 
 - In settings.py file import dj_database_url, comment out the default configurations within database settings and add the following:
 
-DATABASES = {
+1. DATABASES = {
     'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
 }
 
 - Create an if statement in settings.py to run the postgres database when using the app on heroku or sqlite if not
-    if 'DATABASE_URL' in os.environ:
+    1. if 'DATABASE_URL' in os.environ:
         DATABASES = {
             'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
         }
@@ -400,6 +409,7 @@ DATABASES = {
                 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
             }
     }
+
 
 - Create requirements.txt file by typing pip3 freeze --local > requirements.txt
 
@@ -427,7 +437,7 @@ The url for this website can be found [here](https://sushi-go.herokuapp.com/).
 
 * AWS Set Up
 
-Considering the development of the site could require a significant volume of product images, AWS has been used for hosting the images. To implement this you will need and AWS account and to create an S3 Bucket and User Profile.
+AWS has been used for hosting the images. To implement this you will need and AWS account and to create an S3 Bucket and User Profile.
 To serve the images you will need to add the following config to your settings.py file.
 
 if 'USE_AWS' in os.environ:
@@ -459,17 +469,18 @@ if 'USE_AWS' in os.environ:
 
 **Content**
 
-- The Navigation bar, the comments form and the index were inspired by the [I Think Therefore I Blog](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+FST101+2021_T1/courseware/b31493372e764469823578613d11036b/fe4299adcd6743328183aab4e7ec5d13/) Project.
+- [Code Institute - Boutique Ado Walkthrough Project](https://github.com/Code-Institute-Solutions/boutique_ado_v1).
 
-- Full CRUD functionality application was achieved thanks to [CODEMY](https://www.youtube.com/@Codemycom).
+- [CODEMY](https://www.youtube.com/@Codemycom).
 
-- Text posts has been taken by [Lonely Planet](https://www.lonelyplanet.com/).
+- [Very Academy](https://www.youtube.com/@veryacademy).
 
+- [Stack Overflow](https://stackoverflow.com/).
 
-**Media**
+- [Am I responsive](https://ui.dev/amiresponsive).
 
-- Screenshot under the section "site overview" was created with [Am I responsive](https://ui.dev/amiresponsive).
+- [Pixabay](https://pixabay.com/).
 
-- Pictures used for the website have been taken from [Pixabay](https://pixabay.com/).
+- [Ubersuggest](https://neilpatel.com/ubersuggest/).
 
-- The wireframes have been created using [Balsamiq Wireframes](https://balsamiq.com/wireframes/).
+- [Balsamiq Wireframes](https://balsamiq.com/wireframes/).
