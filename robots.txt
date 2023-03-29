@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /accounts/
+Disallow: /basket/
+sitemap: https://sushi-go.herokuapp.com/sitemap.xml

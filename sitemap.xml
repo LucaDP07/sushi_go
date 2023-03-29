@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://sushi-go.herokuapp.com/</loc>
+  <lastmod>2023-03-29T20:02:24+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://sushi-go.herokuapp.com/accounts/signup/</loc>
+  <lastmod>2023-03-29T20:02:24+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sushi-go.herokuapp.com/accounts/login/</loc>
+  <lastmod>2023-03-29T20:02:24+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sushi-go.herokuapp.com/basket/</loc>
+  <lastmod>2023-03-29T20:02:24+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sushi-go.herokuapp.com/foods/?category=nigiri_sushi</loc>
+  <lastmod>2023-03-29T20:02:24+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sushi-go.herokuapp.com/foods/?category=osomaki</loc>
+  <lastmod>2023-03-29T20:02:24+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sushi-go.herokuapp.com/foods/?category=sashimi</loc>
+  <lastmod>2023-03-29T20:02:24+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sushi-go.herokuapp.com/foods/?category=temaki</loc>
+  <lastmod>2023-03-29T20:02:24+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sushi-go.herokuapp.com/foods/?category=tempura</loc>
+  <lastmod>2023-03-29T20:02:24+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sushi-go.herokuapp.com/foods/?category=okura_special_roll</loc>
+  <lastmod>2023-03-29T20:02:24+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sushi-go.herokuapp.com/foods/?category=noodles</loc>
+  <lastmod>2023-03-29T20:02:24+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sushi-go.herokuapp.com/foods/?category=side_dishes</loc>
+  <lastmod>2023-03-29T20:02:24+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sushi-go.herokuapp.com/foods/</loc>
+  <lastmod>2023-03-29T20:02:24+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sushi-go.herokuapp.com/reviews/testimonials/</loc>
+  <lastmod>2023-03-29T20:02:24+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sushi-go.herokuapp.com/contact/</loc>
+  <lastmod>2023-03-29T20:02:24+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sushi-go.herokuapp.com/markets/</loc>
+  <lastmod>2023-03-29T20:02:24+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sushi-go.herokuapp.com/accounts/password/reset/</loc>
+  <lastmod>2023-03-29T20:02:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sushi-go.herokuapp.com/foods/1/</loc>
+  <lastmod>2023-03-29T20:02:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sushi-go.herokuapp.com/foods/2/</loc>
+  <lastmod>2023-03-29T20:02:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sushi-go.herokuapp.com/foods/3/</loc>
+  <lastmod>2023-03-29T20:02:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sushi-go.herokuapp.com/foods/4/</loc>
+  <lastmod>2023-03-29T20:02:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sushi-go.herokuapp.com/foods/5/</loc>
+  <lastmod>2023-03-29T20:02:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sushi-go.herokuapp.com/foods/6/</loc>
+  <lastmod>2023-03-29T20:02:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sushi-go.herokuapp.com/foods/7/</loc>
+  <lastmod>2023-03-29T20:02:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sushi-go.herokuapp.com/foods/8/</loc>
+  <lastmod>2023-03-29T20:02:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sushi-go.herokuapp.com/foods/9/</loc>
+  <lastmod>2023-03-29T20:02:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sushi-go.herokuapp.com/foods/10/</loc>
+  <lastmod>2023-03-29T20:02:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sushi-go.herokuapp.com/foods/11/</loc>
+  <lastmod>2023-03-29T20:02:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sushi-go.herokuapp.com/foods/14/</loc>
+  <lastmod>2023-03-29T20:02:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sushi-go.herokuapp.com/foods/15/</loc>
+  <lastmod>2023-03-29T20:02:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sushi-go.herokuapp.com/foods/12/</loc>
+  <lastmod>2023-03-29T20:02:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sushi-go.herokuapp.com/foods/13/</loc>
+  <lastmod>2023-03-29T20:02:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sushi-go.herokuapp.com/foods/16/</loc>
+  <lastmod>2023-03-29T20:02:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sushi-go.herokuapp.com/foods/17/</loc>
+  <lastmod>2023-03-29T20:02:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sushi-go.herokuapp.com/foods/18/</loc>
+  <lastmod>2023-03-29T20:02:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sushi-go.herokuapp.com/foods/19/</loc>
+  <lastmod>2023-03-29T20:02:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sushi-go.herokuapp.com/foods/20/</loc>
+  <lastmod>2023-03-29T20:02:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sushi-go.herokuapp.com/foods/21/</loc>
+  <lastmod>2023-03-29T20:02:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sushi-go.herokuapp.com/foods/22/</loc>
+  <lastmod>2023-03-29T20:02:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sushi-go.herokuapp.com/foods/26/</loc>
+  <lastmod>2023-03-29T20:02:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sushi-go.herokuapp.com/foods/23/</loc>
+  <lastmod>2023-03-29T20:02:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sushi-go.herokuapp.com/foods/24/</loc>
+  <lastmod>2023-03-29T20:02:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sushi-go.herokuapp.com/foods/25/</loc>
+  <lastmod>2023-03-29T20:02:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sushi-go.herokuapp.com/foods/28/</loc>
+  <lastmod>2023-03-29T20:02:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sushi-go.herokuapp.com/foods/29/</loc>
+  <lastmod>2023-03-29T20:02:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sushi-go.herokuapp.com/foods/27/</loc>
+  <lastmod>2023-03-29T20:02:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sushi-go.herokuapp.com/foods/30/</loc>
+  <lastmod>2023-03-29T20:02:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sushi-go.herokuapp.com/foods/32/</loc>
+  <lastmod>2023-03-29T20:02:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sushi-go.herokuapp.com/foods/31/</loc>
+  <lastmod>2023-03-29T20:02:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sushi-go.herokuapp.com/foods/33/</loc>
+  <lastmod>2023-03-29T20:02:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sushi-go.herokuapp.com/accounts/login/?next=/reviews/testimonials/add/</loc>
+  <lastmod>2023-03-29T20:02:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sushi-go.herokuapp.com/accounts/signup/?next=%2Freviews%2Ftestimonials%2Fadd%2F</loc>
+  <lastmod>2023-03-29T20:02:24+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://sushi-go.herokuapp.com/accounts/login/?next=%2Freviews%2Ftestimonials%2Fadd%2F</loc>
+  <lastmod>2023-03-29T20:02:24+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+
+
+</urlset>
