@@ -3,7 +3,7 @@ from django.db import models
 
 class Market(models.Model):
     """
-    Model for markets Sushi Go takes part.
+    Model class for the markets app
     """
     name = models.CharField(max_length=150)
     image = models.ImageField(upload_to='markets')
