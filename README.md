@@ -82,12 +82,12 @@ Each user story was linked to an Epic.
 In order to increase engagement with the site and build a stronger relationship with its customers, the Sushi Go Team partnered with MailChimp. This is a free service to collect customers email addresses and share news, services and special offers with customers and potential customers. The feature is located on the Footer, visible in every page. The customers have the opportunity to enter their address to subscribe and get a success message once the subscription is completed. No registration to the Sushi Go website is required to benefit of this service.
 Below is a screenshot of the Sushi Go - Mailchimp dashboard.
 
-![Alternate text](/static/images/responsive.png)
+![Alternate text](/static/images/newsletter.png)
 
 - Social Media Marketing: Facebook Page
 In order to increase traffic to the website, the Sushi Go Team has created a Facebook Business Page for organic social media marketing. The decision was taken considering the impact of the social media platform on the Irish people. We can see that in 2023 3.51 millions of irish out of 5.1 is using Facebook, and for this reason it's still considered a great option to promote the business online.
 
-![Alternate text](/static/images/responsive.png)
+![Alternate text](/static/images/facebook.png)
 
 - Search Engine Optimization(SEO)
 The meta keywords and description in the site's base.html have been chosen after a keywords research conducted through Ubersuggest by Neil Patel, a SEO and content marketing tool.
@@ -106,33 +106,43 @@ The "Wish list" page is accessible only for registered users. This page can be a
 **WIREFRAMES**
 - - -
 
-**Home Page: Desktop - Not logged in view**
+**Home Page**
 
-![Alternate text](/static/images/Home%20-%20Desktop%20-%201.png)
+![Alternate text](/static/images/home2.png)
 
-**Second Page: Desktop - Not logged in view**
+**Menu Page**
 
-![Alternate text](/static/images/Second%20page%20-%20Desktop.png)
+![Alternate text](/static/images/menu2.png)
 
 **Home Page: Desktop - Logged in view**
 
 ![Alternate text](/static/images/Home-Desktop%20-%202.png)
 
-**Post Page: Desktop - Not logged in view**
+**Food Details Page**
 
-![Alternate text](/static/images/Article%20Page%20-%20Desktop%20-%201.png)
+![Alternate text](/static/images/detail.png)
 
-**Post Page: Desktop - Logged in view**
+**Check Out Page**
 
-![Alternate text](/static/images/Article%20Page%20-%20Desktop%20-%202.png)
+![Alternate text](/static/images/checkout2.png)
 
-**Add Trip Form: Desktop**
+**Basket Page**
 
-![Alternate text](/static/images/Add%20trip%20form.png)
+![Alternate text](/static/images/basket2.png)
 
-**Home Page: Mobile**
+**Contact Page**
 
-![Alternate text](/static/images/Home%20-%20Mobile.png)
+![Alternate text](/static/images/contact2.png)
+
+**Testimonials Page**
+
+![Alternate text](/static/images/testimonials2.png)
+
+**Markets Page**
+
+![Alternate text](/static/images/markets2.png)
+
+
 
 
 **FEATURES**
@@ -154,7 +164,7 @@ At the bottom of the page we can find the footer with the newsletter signup form
 
 A background image is displayed at the center, between the Navbar and the footer, with a Call to action button also available.
 
-![Alternate Text](/static/images/home_page.png)
+![Alternate Text](/static/images/homepage.png)
 
 - Menu section
  
@@ -162,7 +172,7 @@ When clicking the 'Menu' link in the navbar the dropdown menu will show all the 
 Each card shows an image of the dish, its title, rating and price.
 If the user is a superuser, edit and delete buttons will be available at the bottom of the card.
 
-![Alternate text](/static/images/trips_section.png)
+![Alternate text](/static/images/menu.png)
 
 - Food detail page
  
@@ -172,14 +182,14 @@ The plus and minus buttons increase and decrease the input value.
 Clicking the 'Add to Basket' button adds that amount of food selected to the basket.
 Clicking the 'Back to Menu' button takes the user back to the Menu page.
 
-![Alternate text](/static/images/form.png)
+![Alternate text](/static/images/fooddetail.png)
  
 - Basket Page
  
 The Basket Page allows the user to view a summary of the items in the basket and their total prices.
 Users can change the quantity of the food in the basket or remove it entirely, before proceeding to the secure checkout page. Underneath the grand total a message will be displayed, informing the users of how much more they need to spend in order to receive free delivery if they haven't already met the free delivery threshold (€30). Also a button to enable the users to go "Back to Menu' and add further items to their basket is available. 
 
-![Alternate text](/static/images/post_detail.png)
+![Alternate text](/static/images/basket.png)
 
 - Checkout Page
 
@@ -187,51 +197,51 @@ To place an order and complete the checkout process, there's no need to be regis
 However, only registered users can save their info for future orders, if they wish so.
 The checkout page is simple and easy to use. It also allows the user to take a look at the "Order Summary" before submit their credit card details.
 
-![Alternate text](/static/images/comments_section.png)
+![Alternate text](/static/images/checkout.png)
 
 - Checkout Success Page
 
 Once the order has been processed, a checkout success page is loaded to inform the user the order was successful.
 An email with the order confirmation is also sent to the user.
 
-![Alternate text](/static/images/comments_section.png)
+![Alternate text](/static/images/checkout_success.png)
 
 - Wish List
 
 By clicking on the 'Account' link in the navbar, if signed in, a user can benefit of the wish list feature. Thanks to it the user will have the opportunity to add a dish to the wish list for a future purchase. An option to remove the dishes selected from the wish list is also available.
 
-![Alternate text](/static/images/comments_section.png)
+![Alternate text](/static/images/wishlist.png)
 
 - Testimonials
 
 By clicking on the link in the NavBar, the user will access to the Testimonials page. Unregistered users will be able to read all the reviews left by others, while registered users will also be able to create their own review and see it displayed with their username and the date of submission.
 
-![Alternate text](/static/images/comments_section.png)
+![Alternate text](/static/images/testimonials.png)
 
 - Add Review Page
 
 In the Testimonials page users will find a "Add your review" button. If not signed a Sign In page will display. If signed a form opens and the user can enter all the fields to add a review which will be displayed on the website.
 
-![Alternate text](/static/images/comments_section.png)
+![Alternate text](/static/images/add_review.png)
 
 - Edit Review Page
 
 The Edit review page is accessed by the Edit button, made available beside the review itself and visible only to its owner, so that it can only be edited by its own user or by superuser. If the user confirms the changes made to the review, will be redirected to the Testimonials page and a message will show below the navbar to inform that the review was succesfully edited.
 
-![Alternate text](/static/images/comments_section.png)
+![Alternate text](/static/images/edit_review.png)
 
 - Delete Review Page
 
 The owner of the review also have another button available, which is the Delete button. If the user clicks on it a Delete Review page displays and asks the user for confirmation to delete the review. Users can either click on "Delete" or cancel and go back to the Testimonials Page. 
 If the user confirms to delete the review, will be redirected to the Testimonials Page and a message will show below the navbar to inform that the review was deleted.
 
-![Alternate text](/static/images/edit_delete.png)
+![Alternate text](/static/images/delete_review.png)
 
 - Register Page
 
 This page can be opened from the register button in the navigation bar. New visitors are asked to enter username, email, email confirmation, password and password confirmation to register. Once successfully registered, users will be asked to check their email to confirm their registration and have access to all the features available for registered users.
 
-![Alternate text](/static/images/signup.png)
+![Alternate text](/static/images/register.png)
 
 - Sign In Page
 
@@ -249,7 +259,7 @@ Once a user is logged in, the Sign In button in the navigation bar will be repla
 
 By clicking on the "About" button in the NavBar, the user has the opportunity to select the Markets page and see all the local markets Sushi Go collaborate with. This is an opportunity for the user to know where to find in town their favourite sushi, while around. Each card contains the name of the market, a picture of it and a link to its official page with all the important info.
 
-![Alternate text](/static/images/signout.png)
+![Alternate text](/static/images/markets.png)
 
 - Contact Us Page
 
@@ -258,31 +268,31 @@ If the user is logged in, the email field is prepopulated with the user's email 
 The form contains all the fields required to submit the contact request. If any of these fields are left blank or with just whitespace then an error message will appear on that particular field, notifying the user of the issue.
 Once the form is submitted, the user receives an email confirmation of their request so that they have a record of it.
 
-![Alternate text](/static/images/signout.png)
+![Alternate text](/static/images/contact_us.png)
 
 - Privacy Policy
 
 The "About" button also contains a link to the Sushi Go Privacy Policy, to ensure that the website is compliant with the European Privacy Policy Rules.
 
-![Alternate text](/static/images/signout.png)
+![Alternate text](/static/images/privacy_policy.png)
 
 - User Profile
 
 The 'Account' link in the navbar, allows the signed in users to acces their own profile and update their saved delivery details and view order history. Each transaction contains all the necessary info. The 'Order Number' can be clicked to open the order confirmation page.
 
-![Alternate text](/static/images/signout.png)
+![Alternate text](/static/images/profile.png)
 
 - Admin - Menu Management
 
 If logged in, super users can access to the "Menu Management" page via the "Account" button. Thanks to this feature the Admin can update the menu selection by adding new dishes to the offer, without accessing to the admin area. Once logged in, the Admin can also edit or delete a dish within the Food Details page, thanks to the specific 'Edit' or 'Delete' buttons.
 
-![Alternate text](/static/images/signout.png)
+![Alternate text](/static/images/menu_management.png)
 
 - Page 404 - Page Not Found
 
 In case of any typing URL error or if the page the user is looking for doesn't exist, this Error page will be displayed and a link to the Home page will be available to allow the user to get back to the Sushi Go website.
 
-![Alternate text](/static/images/signout.png)
+![Alternate text](/static/images/error_page.png)
 
 
 **TECHNOLOGIES USED**
