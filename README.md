@@ -87,10 +87,14 @@ Below is a screenshot of the Sushi Go - Mailchimp dashboard.
 - Social Media Marketing: Facebook Page
 In order to increase traffic to the website, the Sushi Go Team has created a Facebook Business Page for organic social media marketing. The decision was taken considering the impact of the social media platform on the Irish people. We can see that in 2023 3.51 millions of irish out of 5.1 is using Facebook, and for this reason it's still considered a great option to promote the business online.
 
+![Alternate text](/static/images/stats.png)
+
+Below we can see the Facebook Page created for this project.
+
 ![Alternate text](/static/images/facebook.png)
 
 - Search Engine Optimization(SEO)
-The meta keywords and description in the site's base.html have been chosen after a keywords research conducted through Ubersuggest by Neil Patel, a SEO and content marketing tool.
+The meta keywords and description in the site's base.html have been chosen after a keywords research conducted through [Ubersuggest](https://neilpatel.com/ubersuggest/). by Neil Patel, a SEO and content marketing tool.
 For SEO purposes, a sitemap.xml and robots.txt file were included to the website's root directory to improve the quality of the website and to ensure that search engines are able to understand its structure.
 
 **Structure**
@@ -114,9 +118,9 @@ The "Wish list" page is accessible only for registered users. This page can be a
 
 ![Alternate text](/static/images/menu2.png)
 
-**Home Page: Desktop - Logged in view**
+**Menu Page: Logged in view**
 
-![Alternate text](/static/images/Home-Desktop%20-%202.png)
+![Alternate text](/static/images/logged.png)
 
 **Food Details Page**
 
@@ -141,7 +145,6 @@ The "Wish list" page is accessible only for registered users. This page can be a
 **Markets Page**
 
 ![Alternate text](/static/images/markets2.png)
-
 
 
 
@@ -309,6 +312,7 @@ In case of any typing URL error or if the page the user is looking for doesn't e
 - Mailchimp: To create the newsletter signup form.
 - Stripe: To process all online and credit card purchases on the website.
 - Font Awesome: was used for all the icons on the website.
+- Compressor - was used to compress images.
 - Gitpod was used to develop the project.
 - GitHub was used to host repository.
 - Heroku was used to deploy the website.
@@ -343,44 +347,8 @@ The Signup, Signin and Signout features have no issues and are working properly.
 
 * VALIDATOR TESTING
 
-HTML: No errors were returned when passing through the official W3C Validator.
+Testing results can be found [here](/TESTING.md)
 
-![Alternate text](/static/images/html_responsive.png)
-
-CSS: No errors were returned when passing through the official (Jigsaw) Validator.
-
-![Alternate text](/static/images/css_responsive.png)
-
-All the .py files are validated in the PEP8 online validator replacement provided by Code Institute. No errors detected.
-
-- admin.py
-
-![Alternate text](/static/images/admin.png)
-
-- apps.py
-
-![Alternate text](/static/images/apps.png)
-
-- forms.py
-
-![Alternate text](/static/images/forms.png)
-
-- models.py
-
-![Alternate text](/static/images/models.png)
-
-- urls.py
-
-![Alternate text](/static/images/urls.png)
-
-- views.py
-
-![Alternate text](/static/images/views.png)
-
- 
-- UNFIXED BUGS
-
-No unfixed bugs.
 
 **DEPLOYMENT**
 - - -
