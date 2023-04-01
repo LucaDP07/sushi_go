@@ -58,7 +58,7 @@ class ContactUs(View):
             )
 
             contact_form.save()
-            messages.success(self.request, 'Your enquiry has been sent')
+            messages.success(self.request, 'Your message has been sent')
 
             target = "home/index.html"
             context = {"plain_message": True}

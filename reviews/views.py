@@ -8,7 +8,7 @@ from .forms import TestimonialForm
 
 
 class Testimonials(generic.ListView):
-    """ This view is used to display all testimonials """
+    """ This view is used to display all reviews """
     model = Testimonial
     template_name = 'reviews/testimonials.html'
 
@@ -78,8 +78,7 @@ class DeleteTestimonial(
         """
         This function is used to display sucess message given
         SucessMessageMixin cannot be used in generic.DeleteView.
-        Credit: https://stackoverflow.com/questions/24822509/
-        success-message-in-deleteview-not-shown
+
         """
         messages.success(self.request, self.success_message)
         return super(DeleteTestimonial, self).delete(request, *args, **kwargs)

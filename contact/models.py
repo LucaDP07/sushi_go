@@ -14,7 +14,7 @@ class Contact(models.Model):
     date = models.DateTimeField(auto_now_add=True)
 
     def get_absolute_url(self):
-        """Get url after user submits enquiry """
+        """Get url after user submits message """
         return reverse('home')
 
     def __str__(self):
