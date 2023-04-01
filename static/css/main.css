@@ -394,13 +394,7 @@ footer {
 
 
 .quote {
-    left: 50%;
-    position: absolute;
-    top: -20px;
-    margin-left: -16px;
-    border-radius: 50%;
-    padding: 10px;
-    color: #FFA92C !important;
+    padding: 10px; 
 }
 
 /* Image field Form */
