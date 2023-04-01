@@ -8,7 +8,7 @@ from .forms import FoodForm
 
 
 def all_foods(request):
-    """ A view to show all foods, including sorting and search queries """
+    """ A view to show all foods, including search queries """
 
     foods = Food.objects.all()
     query = None

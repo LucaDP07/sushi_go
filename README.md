@@ -94,7 +94,7 @@ Below we can see the Facebook Page created for this project.
 ![Alternate text](/static/images/facebook.png)
 
 - Search Engine Optimization(SEO)
-The meta keywords and description in the site's base.html have been chosen after a keywords research conducted through [Ubersuggest](https://neilpatel.com/ubersuggest/). by Neil Patel, a SEO and content marketing tool.
+The meta keywords and description in the site's base.html have been chosen after a keywords research conducted through [Ubersuggest](https://neilpatel.com/ubersuggest/) by Neil Patel, a SEO and content marketing tool.
 For SEO purposes, a sitemap.xml and robots.txt file were included to the website's root directory to improve the quality of the website and to ensure that search engines are able to understand its structure.
 
 **Structure**
